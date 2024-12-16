@@ -1,3 +1,26 @@
-*{
-  margin:'0'
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('./assets/fonts/CabinetGrotesk-Black.otf') format('opentype');
+  font-weight: 900; /* Black font weight */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('./assets/fonts/CabinetGrotesk-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CabinetGrotesk';
+  src: url('./assets/fonts/CabinetGrotesk-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CoveredByYourGrace';
+  src: url('./assets/fonts/CoveredByYourGrace-Regular.ttf') format('truetype');
+  font-style: normal;
 }

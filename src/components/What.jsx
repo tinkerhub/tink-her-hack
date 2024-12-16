@@ -6,20 +6,20 @@ import white from '../assets/whiteimg.png'
 
 function What() {
   return (
-    <div style={{fontFamily:'Cabinet Grotesk',fontSize:'20px'}}>
+    <div style={{fontFamily:'CabinetGrotesk',fontSize:'20px'}}>
       <div style={{width:'100%',height:'1000px',backgroundColor:'black',display:'flex',flexDirection:'column',textAlign:'center',color:'white',}}>
         <div style={{position:'relative',zIndex:''}}>
         <img src={image} alt="" style={{width:'100%',height:'800px'}}/>
         </div>
-       <div style={{position:'absolute',zIndex:'1',width:'200px',height:'100px',marginLeft:'650px',marginTop:'190px',color:'white',}}>
-        <p style={{fontFamily:'Covered By Your Grace',fontSize:'60px'}}>What is </p>
-      <p style={{fontSize:'25px'}}>  tink-her-hack?</p>
+       <div style={{position:'absolute',zIndex:'1',width:'200px',height:'100px',marginLeft:'650px',marginTop:'150px',color:'white',}}>
+        <p style={{fontFamily:'CoveredByYourGrace',fontSize:'60px'}}>What is </p>
+      <p style={{fontSize:'35px',marginTop:'-70px'}}>  tink-her-hack?</p>
        </div>
        <div style={{position:'absolute',zIndex:'1',width:'700px',height:'300px',marginLeft:'400px',marginTop:'350px',color:'white'}}>
         <p>An overnight hackethon where 4000 women across Kerala stay up all night to build their first tech projects.No coding experience needed-if you are curious about technology,this is your starting point.We bring the hackethon closer to you through 50+ venues across kerala,so you can join a venue near your home and spend one exciting night turning your ideas into real projects .With mentors to guide you and other women building alongside you,it's safe space to start your tech journey.</p>
        </div>
 
-       <div style={{width:'100%',height:'500px',position:'absolute',zIndex:'2',marginTop:'600px',fontFamily:'Cabinet Grotesk'}}>
+       <div style={{width:'100%',height:'500px',position:'absolute',zIndex:'2',marginTop:'600px',fontFamily:'CabinetGrotesk'}}>
         <img src={imagepaper} alt='' style={{width:'100%',height:'500px'}}/>
         <div style={{width:'500px',display:'flex',marginLeft:'500px'}}>
         <p style={{color:'black',marginTop:'-280px',fontSize:'25px',fontWeight:'bold'}}>Who says hackathons happen only in big cities? Join us at a venue near you, as 4000 women across Kerala prove that innovation can happen anywhere. Your hometown is your tech hub.</p>

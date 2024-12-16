@@ -36,17 +36,17 @@ function Hero() {
           
           }}
         >
-           <h1 style={{ fontFamily: 'Cabinet Grotesk',fontSize:'15px'}}>Registrations from Jan 5th</h1>
+           <h1 style={{ fontFamily: 'CabinetGrotesk',fontSize:'15px'}}>Registrations from Jan 5th</h1>
            <button style={{width:'150px',height:'30px',borderRadius:'20px',backgroundColor:'#ED444B',color:'white',marginTop:'10px',border:'none'}}>APPLY NOW</button>
         </div>
-        <div style={{display:'flex',position:'absolute',zIndex:'1',color:'white',flexDirection:'column',marginLeft:'490px',fontSize:'30px',textAlign:'center',marginTop:'200px',fontFamily: 'Cabinet Grotesk'}}>
+        <div style={{display:'flex',position:'absolute',zIndex:'1',color:'white',flexDirection:'column',marginLeft:'490px',fontSize:'30px',textAlign:'center',marginTop:'200px',fontFamily: 'CabinetGrotesk'}}>
           <img src={logo} alt="" style={{width:'130px',height:'50px',marginTop:'-90px',marginLeft:'210px'}}/>
-          <h1>TINK-HER-HACK 3.0</h1><br/>
-          <p style={{marginTop:'-40px',fontSize:'25px'}}>Kerala's Largest Hackathon for Girls</p>
+          <h1 style={{fontFamily: 'CabinetGrotesk'}}>TINK-HER-HACK 3.0</h1><br/>
+          <p style={{marginTop:'-70px',fontSize:'25px',fontFamily: 'CabinetGrotesk'}}>Kerala's Largest Hackathon for Girls</p>
         </div>
         <div style={{width:'300px',height:'100px',position:'absolute',zIndex:'1',marginLeft:'420px',marginTop:'200px'}}>
         <img src={image3} alt="" style={{marginTop:'140px',marginLeft:'20px'}}/>
-        <div style={{display:'flex',width:'200px',fontFamily:'Covered By Your Grace',fontSize:'30px',position:'absolute',zIndex:'1',marginTop:'-160px',marginLeft:'250px',color:'white',textAlign:'center'}}>
+        <div  style={{fontFamily:'CoveredByYourGrace',display:'flex',width:'200px',fontSize:'30px',position:'absolute',zIndex:'1',marginTop:'-180px',marginLeft:'250px',color:'white',textAlign:'center'}}>
           <p>4000  girls <br/> 2 night of making</p>
         
         </div>

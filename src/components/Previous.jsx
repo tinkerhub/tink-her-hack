@@ -10,7 +10,7 @@ function Previous() {
           alt="Descriptive text" 
           style={{ width: '100%', height: '400px',marginTop:'70px',borderRadius:'20px' }} 
         />
-        <p style={{width:'100%',textAlign:'center',fontSize:'30px',color:'#FCD600',fontFamily:'Covered By Your Grace'}}>A glimpse from Previous edition</p>
+        <p style={{width:'100%',textAlign:'center',fontSize:'30px',color:'#FCD600',fontFamily:'CoveredByYourGrace'}}>A glimpse from Previous edition</p>
       </div>
     </div>
   );

@@ -25,8 +25,8 @@ function Five() {
              
           }}
         >
-         <h2 style={{fontFamily:'Covered By Your Grace'}}>Breaking entry barriers</h2>
-         <ul style={{ fontFamily: 'Cabinet Grotesk',marginTop:'10px'}}>
+         <h2 style={{fontFamily:'CoveredByYourGrace'}}>Breaking entry barriers</h2>
+         <ul style={{ fontFamily: 'CabinetGrotesk',marginTop:'10px'}}>
            <li>Brings tech opportunities to local communities</li>
            <li>Creates safe spaces for first-time builders
            </li>
@@ -63,9 +63,9 @@ function Five() {
           width:'600px',height:'300px',fontSize:'25px',marginTop:'30px'
           }}
         >
-          <h2 style={{fontFamily:'Covered By Your Grace'}}>The power of numbers</h2>
+          <h2 style={{fontFamily:'CoveredByYourGrace'}}>The power of numbers</h2>
 
-         <ul style={{ fontFamily: 'Cabinet Grotesk',marginTop:'10px'}}>
+         <ul style={{ fontFamily: 'CabinetGrotesk',marginTop:'10px'}}>
            <li>4000 women building together creates momentum</li>
            <li>80 venues means local support systems
 

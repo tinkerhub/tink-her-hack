@@ -11,7 +11,7 @@ function Partners() {
     <div style={{width:'100%',height:'500px',backgroundColor:'white'}}>      
       <div>
         <div style={{display:'flex',justifyContent:'center',marginTop:'40px'}}>
-        <h1 style={{fontFamily:'Covered By Your Grace'}}>Our Partners So Far</h1>
+        <h1 style={{fontFamily:'CoveredByYourGrace'}}>Our Partners So Far</h1>
         </div>
        
         <div style={{display:'flex',justifyContent:'center',alignItems:'center'}}>
