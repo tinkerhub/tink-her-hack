@@ -11,7 +11,7 @@ import Third from '../components/Third'
 function Home() {
   return (
     <div style={{margin:'0'}} >
-      <Hero/>
+       <Hero/>
        <What />
        <Third />
        <Previous/>

@@ -16,18 +16,17 @@ function Five() {
         style={{
           display: 'flex',
           flexWrap: 'wrap',
-          justifyContent:'center'
-        
+          justifyContent:'center'       
         }}
       >
         <div
           style={{
-            width:'600px',height:'400px',fontSize:'25px',marginTop:'30px'
+            width:'500px',height:'400px',fontSize:'25px',marginTop:'80px'
              
           }}
         >
-         <h2>Breaking entry barriers</h2>
-         <p>Bringing tech opportunities to local communities,creating safe spaces for first-time builders,removing travel and accessibility concerns, and providing guided first exposure to technology come together to empower individuals and foster innovation</p>
+         <h2 style={{fontFamily:'Covered By Your Grace'}}>Breaking entry barriers</h2>
+         <p style={{ fontFamily: 'Cabinet Grotesk'}}>Bringing tech opportunities to local communities,creating safe spaces for first-time builders,removing travel and accessibility concerns, and providing guided first exposure to technology come together to empower individuals and foster innovation</p>
         </div>
         <div
           style={{
@@ -56,8 +55,8 @@ function Five() {
           width:'600px',height:'300px',fontSize:'25px',marginTop:'30px'
           }}
         >
-          <h2>the power of numbers</h2>
-          <p>
+          <h2 style={{fontFamily:'Covered By Your Grace'}}>the power of numbers</h2>
+          <p style={{ fontFamily: 'Cabinet Grotesk'}}>
             4,000 women building together creates momentum,80 venues provide local support systems,peer learning boosts confidence ,and visible role models emerge in every community to inspire empower others
           </p>
           

@@ -3,13 +3,13 @@ import backimg from '../assets/Frame4.png'
 
 function Impact() {
   return (
-    <div style={{marginTop:'-50px',width:'100%',height:'800px'}}>
-      <div style={{backgroundImage:`url(${backimg})`,width:'100%',height:'800px',color:'white'}}>
+    <div style={{marginTop:'-50px',width:'100%',height:'850px'}}>
+      <div style={{backgroundImage:`url(${backimg})`,width:'100%',height:'850px',color:'white'}}>
       
         <div style={{width:'100%',height:'100px',fontSize:'50px',display:'flex',justifyContent:'center'}}>
-          <p style={{marginTop:'50px'}}>proven impact</p>
+          <p style={{marginTop:'50px',fontFamily:'Covered By Your Grace',color:'#FCD600'}}>proven impact</p>
         </div>
-        <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center',marginTop:'70px'}}>
+        <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center',marginTop:'70px', fontFamily: 'Cabinet Grotesk'}}>
           <div style={{width:'400px',height:'200px',display:'flex',flexDirection:'column',textAlign:'center',fontSize:'22px',margin:'20px'}}>
             <h1>90% </h1>
             <p>
@@ -48,7 +48,7 @@ function Impact() {
           </div>
 
         </div>
-        <div style={{width:'100%',height:'80px',fontSize:'20px',display:'flex',justifyContent:'center'}}>
+        <div style={{width:'100%',height:'80px',fontSize:'20px',display:'flex',justifyContent:'center', fontFamily: 'Cabinet Grotesk'}}>
           <p>*From MnE survey across 1104 participants</p>
         </div>
 
