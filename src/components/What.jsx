@@ -13,7 +13,7 @@ function What() {
         </div>
        <div style={{position:'absolute',zIndex:'1',width:'200px',height:'100px',marginLeft:'650px',marginTop:'150px',color:'white',}}>
         <p style={{fontFamily:'CoveredByYourGrace',fontSize:'60px'}}>What is </p>
-      <p style={{fontSize:'35px',marginTop:'-70px'}}>  tink-her-hack?</p>
+      <p style={{fontSize:'25px',marginTop:'-70px'}}>  tink-her-hack?</p>
        </div>
        <div style={{position:'absolute',zIndex:'1',width:'700px',height:'300px',marginLeft:'400px',marginTop:'350px',color:'white'}}>
         <p>An overnight hackethon where 4000 women across Kerala stay up all night to build their first tech projects.No coding experience needed-if you are curious about technology,this is your starting point.We bring the hackethon closer to you through 50+ venues across kerala,so you can join a venue near your home and spend one exciting night turning your ideas into real projects .With mentors to guide you and other women building alongside you,it's safe space to start your tech journey.</p>
