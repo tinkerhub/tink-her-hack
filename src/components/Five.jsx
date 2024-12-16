@@ -1,6 +1,6 @@
 import React from 'react';
 import image from '../assets/Frame2.png';
-import image1 from '../assets/image2.jpg'
+import image1 from '../assets/power.jpg'
 import image3 from '../assets/image3.jpg'
 import imageone from '../assets/imageone.png'
 import imagetwo from '../assets/imagetwo.png'
@@ -26,7 +26,15 @@ function Five() {
           }}
         >
          <h2 style={{fontFamily:'Covered By Your Grace'}}>Breaking entry barriers</h2>
-         <p style={{ fontFamily: 'Cabinet Grotesk'}}>Bringing tech opportunities to local communities,creating safe spaces for first-time builders,removing travel and accessibility concerns, and providing guided first exposure to technology come together to empower individuals and foster innovation</p>
+         <ul style={{ fontFamily: 'Cabinet Grotesk',marginTop:'10px'}}>
+           <li>Brings tech opportunities to local communities</li>
+           <li>Creates safe spaces for first-time builders
+           </li>
+           <li>Removes travel and accessibility concerns
+           </li>
+           <li>Provides guided first exposure to technology</li>
+
+         </ul>
         </div>
         <div
           style={{
@@ -55,10 +63,19 @@ function Five() {
           width:'600px',height:'300px',fontSize:'25px',marginTop:'30px'
           }}
         >
-          <h2 style={{fontFamily:'Covered By Your Grace'}}>the power of numbers</h2>
-          <p style={{ fontFamily: 'Cabinet Grotesk'}}>
-            4,000 women building together creates momentum,80 venues provide local support systems,peer learning boosts confidence ,and visible role models emerge in every community to inspire empower others
-          </p>
+          <h2 style={{fontFamily:'Covered By Your Grace'}}>The power of numbers</h2>
+
+         <ul style={{ fontFamily: 'Cabinet Grotesk',marginTop:'10px'}}>
+           <li>4000 women building together creates momentum</li>
+           <li>80 venues means local support systems
+
+           </li>
+           <li>Peer learning boosts confidence
+
+           </li>
+           <li>Creates visible role models in every community</li>
+
+         </ul>
           
         </div>
       </div>

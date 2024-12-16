@@ -3,6 +3,7 @@ import image from '../assets/Frame1.jpg';
 import image2 from '../assets/heroimg.png';
 import image3 from '../assets/count.png';
 import badge from '../assets/badge.png';
+import logo from '../assets/logo.png';
 
 function Hero() {
   return (
@@ -39,8 +40,9 @@ function Hero() {
            <button style={{width:'150px',height:'30px',borderRadius:'20px',backgroundColor:'#ED444B',color:'white',marginTop:'10px',border:'none'}}>APPLY NOW</button>
         </div>
         <div style={{display:'flex',position:'absolute',zIndex:'1',color:'white',flexDirection:'column',marginLeft:'490px',fontSize:'30px',textAlign:'center',marginTop:'200px',fontFamily: 'Cabinet Grotesk'}}>
+          <img src={logo} alt="" style={{width:'130px',height:'50px',marginTop:'-90px',marginLeft:'210px'}}/>
           <h1>TINK-HER-HACK 3.0</h1><br/>
-          <p>kerala's Largest Hackathon for Girls</p>
+          <p style={{marginTop:'-40px',fontSize:'25px'}}>Kerala's Largest Hackathon for Girls</p>
         </div>
         <div style={{width:'300px',height:'100px',position:'absolute',zIndex:'1',marginLeft:'420px',marginTop:'200px'}}>
         <img src={image3} alt="" style={{marginTop:'140px',marginLeft:'20px'}}/>

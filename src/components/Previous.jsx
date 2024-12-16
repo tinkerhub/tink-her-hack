@@ -1,10 +1,10 @@
 import React from 'react';
-import image from '../assets/image2.jpg'; // Ensure the path and file exist
+import image from '../assets/glimpse.jpg'; // Ensure the path and file exist
 
 function Previous() {
   return (
     <div style={{ color: 'white', backgroundColor: '#3670FF', width: '100%', height: '560px',display:'flex',justifyContent:'center' }}>
-      <div style={{height: '550px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center' }}>
+      <div style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center' }}>
         <img 
           src={image} 
           alt="Descriptive text" 
