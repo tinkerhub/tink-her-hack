@@ -7,7 +7,7 @@ function Impact() {
       <div style={{backgroundImage:`url(${backimg})`,width:'100%',height:'850px',color:'white'}}>
       
         <div style={{width:'100%',height:'100px',fontSize:'50px',display:'flex',justifyContent:'center'}}>
-          <p  style={{marginTop:'50px',fontFamily:'CoveredByYourGrace',color:'#FCD600'}}>proven impact</p>
+          <p  style={{marginTop:'50px',fontFamily:'CoveredByYourGrace',color:'#FCD600'}}>Proven Impact</p>
         </div>
         <div style={{display:'flex',flexWrap:'wrap',justifyContent:'center',marginTop:'70px', fontFamily: 'CabinetGrotesk'}}>
           <div style={{width:'400px',height:'200px',display:'flex',flexDirection:'column',textAlign:'center',fontSize:'22px',margin:'20px'}}>

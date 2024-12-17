@@ -15,13 +15,13 @@ function Partners() {
         </div>
        
         <div style={{display:'flex',justifyContent:'center',alignItems:'center',width:'1000px',height:'600px',flexWrap:'wrap'}}>
-          <div style={{display:'flex',width:'800px',height:'600px'}}>
-            <img src={one} alt="" style={{width:'80px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
-            <img src={two} alt="" style={{width:'80px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
-            <img src={three} alt="" style={{width:'80px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
-            <img src={four} alt="" style={{width:'80px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
-            <img src={five} alt="" style={{width:'80px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
-            <img src={six} alt="" style={{width:'80px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
+          <div style={{display:'flex',width:'800px',height:'600px',marginLeft:'100px'}}>
+            <img src={one} alt="" style={{width:'100px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
+            <img src={two} alt="" style={{width:'100px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
+            <img src={three} alt="" style={{width:'100px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
+            <img src={four} alt="" style={{width:'100px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
+            <img src={five} alt="" style={{width:'100px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
+            <img src={six} alt="" style={{width:'100px',height:'60px',marginLeft:'100px',marginTop:'50px'}}/>
          
           </div>
          
