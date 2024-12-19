@@ -1,0 +1,67 @@
+/* Base styles */
+.previous-container {
+  color: white;
+  background-color: #3670FF;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous-content {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.previous-text {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #FCD600;
+  font-family: 'CoveredByYourGrace', cursive;
+  margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .previous-text {
+    font-size: 20px;
+  }
+
+  .previous-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .previous-text {
+    font-size: 18px;
+  }
+
+  .previous-image {
+    border-radius: 15px;
+  }
+  .previous-container{
+    margin-top: 1000px;
+    width: 390px;
+  
+  }
+  .previous-content{
+    width: 360px;
+    height: 300px;
+
+  }
+}

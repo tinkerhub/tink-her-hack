@@ -1,16 +1,17 @@
 import React from 'react';
 import image from '../assets/glimpse.jpg'; // Ensure the path and file exist
+import '../styles/Previous.css'; // Import the CSS file
 
 function Previous() {
   return (
-    <div style={{ color: 'white', backgroundColor: '#3670FF', width: '100%', height: '560px',display:'flex',justifyContent:'center' }}>
-      <div style={{ width: '600px', height: '590px',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center' }}>
+    <div className="previous-container">
+      <div className="previous-content">
         <img 
           src={image} 
-          alt="Descriptive text" 
-          style={{ width: '600px', height: '400px',marginTop:'70px',borderRadius:'20px' }} 
+          alt="A glimpse from the previous edition" 
+          className="previous-image" 
         />
-        <p style={{width:'100%',textAlign:'center',fontSize:'30px',color:'#FCD600',fontFamily:'CoveredByYourGrace'}}>A glimpse from Previous edition</p>
+        <p className="previous-text">A glimpse from Previous edition</p>
       </div>
     </div>
   );

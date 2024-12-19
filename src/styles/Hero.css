@@ -1,0 +1,202 @@
+/* Hero.css */
+
+.hero-container {
+  width: 100%;
+  margin: 0;
+}
+
+.hero-background {
+  width: 100%;
+  height: 800px;
+  background-color: black;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-registrations {
+  width: 450px;
+  height: 100px;
+  background-color: #fcd600;
+  position: absolute;
+  z-index: 1;
+  left: 80px;
+  top: -15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  border-radius: 20px;
+  margin-left: 850px;
+
+}
+
+.hero-registrations h1 {
+  font-family: 'CoveredByYourGrace', cursive;
+  font-size: 25px;
+}
+
+.hero-registrations button {
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #ed444b;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  left: 490px;
+  top: 200px;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+.hero-logo {
+  width: 130px;
+  height: 50px;
+  margin-top: -90px;
+  margin-left: 210px;
+}
+
+.hero-statistics {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  left: 420px;
+  top: 200px;
+}
+
+.hero-count-image {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.hero-stats-text {
+  width: 100%;
+  font-family: 'CoveredByYourGrace', cursive;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-left: 250px;
+  margin-top: -130px;
+}
+
+.hero-stats-text p{
+  margin-top: -150px;
+  margin-left:-100px;
+ 
+}
+
+.hero-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-badge {
+  width: 300px;
+  height: 300px;
+  margin-left: -450px;
+  margin-top: -200px;
+}
+
+.hero-main-image {
+  width: 1520px;
+  margin-top: -170px;
+  margin-left: -420px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .hero-background {
+  
+    height: 510px;
+  }
+
+  .hero-registrations {
+    width: 250px;
+    height: 50px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 0;
+  }
+
+  .hero-registrations h1 {
+    font-size: 12px;
+  }
+
+  .hero-registrations button {
+    width: 120px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .hero-content {
+    left: 30px;
+    top: 120px;
+    font-size: 15px;
+  }
+  
+  .hero-content p {
+    font-size: 14px;
+    text-align: center;
+    margin-left: 30px;
+  
+  }
+  .hero-content h1{
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+
+
+  .hero-logo {
+    width: 60px;
+    height: 30px;
+    margin-left: 130px;
+    margin-top: 10px;
+  }
+
+  .hero-statistics {
+    left: 20px;
+    top: 300px;
+  }
+
+  .hero-count-image {
+    margin-left: 50px;
+    width: 250px;
+    height: 100px;
+    margin-top: -30px;
+  }
+
+  .hero-stats-text {
+   
+    font-size: 17px;
+    margin-top: 65px;
+    margin-left: 70px;
+  }
+
+  .hero-badge {
+    width: 100px;
+    height: 100px;
+    margin-left: -30px;
+    margin-top: -250px;
+  }
+
+  .hero-main-image {
+    width: 420px;
+    margin-left: -30px;
+    margin-top: -50px;
+  }
+  .hero-images{
+    margin-top: 250px;
+  }
+}

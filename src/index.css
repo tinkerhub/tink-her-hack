@@ -24,3 +24,7 @@
   src: url('./assets/fonts/CoveredByYourGrace-Regular.ttf') format('truetype');
   font-style: normal;
 }
+
+*{
+  margin: 0;
+}

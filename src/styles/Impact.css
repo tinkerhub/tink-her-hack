@@ -1,0 +1,109 @@
+/* Container */
+.impact-container {
+  margin-top: -50px;
+  width: 100%;
+}
+
+/* Background */
+.impact-background {
+  width: 100%;
+  min-height: 850px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.impact-header {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+  font-family: 'CoveredByYourGrace', cursive;
+  color: #FCD600;
+}
+
+/* Stats Grid */
+.impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 20px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* Individual Stat Box */
+.impact-stat {
+  width: 400px;
+  max-width: 90%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  margin: 20px;
+}
+
+/* Footer */
+.impact-footer {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  font-family: 'CabinetGrotesk', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .impact-header {
+    font-size: 40px;
+  }
+
+  .impact-stat {
+    font-size: 18px;
+  }
+
+  .impact-footer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-container{
+    width: 415px;
+    margin-top: -250px;
+   
+  }
+  .impact-background{
+    height: 1500px;
+  }
+  .impact-header {
+    font-size: 30px;
+  }
+  .impact-stats{
+   
+    height: 50px;
+  }
+
+  .impact-stat{
+    
+    height: 50px;
+  }
+  .impact-stat h1 {
+    font-size: 28px;
+   
+  }
+
+  .impact-stat p {
+    font-size: 16px;
+  }
+
+  .impact-footer {
+    font-size: 14px;
+    margin-top: 1100px;
+  }
+}
