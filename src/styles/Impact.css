@@ -1,12 +1,12 @@
 /* Container */
 .impact-container {
   margin-top: -50px;
-  width: 100%;
+  width: 100vw;
 }
 
 /* Background */
 .impact-background {
-  width: 100%;
+  width: 100vw;
   min-height: 850px;
   color: white;
   background-size: cover;
@@ -74,8 +74,8 @@
 
 @media (max-width: 480px) {
   .impact-container{
-    width: 415px;
-    margin-top: -250px;
+   
+     margin-top: -250px;
    
   }
   .impact-background{

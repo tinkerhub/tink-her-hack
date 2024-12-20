@@ -1,6 +1,6 @@
 /* Container */
 .five-container {
-  width: 100%;
+  width: 100vw;
   min-height: 850px;
   background-size: cover;
   background-position: center;
@@ -148,7 +148,7 @@
 
 @media (max-width: 480px) {
   .five-container{
-    width: 405px;
+   
   }
 
   .five-title {

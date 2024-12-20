@@ -26,7 +26,7 @@ function Hero() {
         <div className="hero-statistics">
           <img src={image3} alt="count" className="hero-count-image" />
           <div className="hero-stats-text">
-            <p>4000 girls <br /> 2 nights of making</p>
+            <p>4000 girls <br /> 1 night of making</p>
           </div>
           <div className="hero-images">
             <img src={badge} alt="badge" className="hero-badge" />

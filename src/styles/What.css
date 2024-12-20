@@ -2,7 +2,7 @@
 .what-container {
   font-family: 'CabinetGrotesk', sans-serif;
   font-size: 20px;
-
+  width: 100vw;
   
 }
 
@@ -10,7 +10,7 @@
  
   color: white;
   text-align: center;
-   width: 100%;
+   width: 100vw;
  
 }
 .whatone{
@@ -93,6 +93,7 @@
 
 .yellow-section {
   background-color: #fcd600;
+  width: 50vw;
  
   
 }
@@ -189,7 +190,7 @@
   }
   .yellow-section{
     margin-top: 50px;
-    width: 392px;
+    width: 100vw;
   }
   .yellow-section h2{
   margin-top: 70px;
