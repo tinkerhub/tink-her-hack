@@ -1,0 +1,91 @@
+.testimonials-container {
+  width: 100%;
+  background-color: #3670FF;
+}
+
+.testimonials-content {
+  width: 100%;
+  min-height: 600px;
+  background-color: #3670FF;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.testimonials-left {
+  max-width: 500px;
+  flex: 1 1 300px;
+  height: auto;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.testimonials-title {
+  font-family: 'CoveredByYourGrace';
+  text-align: center;
+}
+
+.testimonials-quote {
+  margin-top: 30px;
+  font-family: 'CabinetGrotesk';
+}
+
+.testimonials-right {
+  max-width: 500px;
+  flex: 1 1 300px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.testimonials-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .testimonials-content {
+    flex-direction: column;
+  }
+
+  .testimonials-left,
+  .testimonials-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .testimonials-quote {
+    font-size: 16px;
+  }
+
+  .testimonials-image {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-left {
+    font-size: 14px;
+  }
+
+  .testimonials-title {
+    font-size: 24px;
+  }
+
+  .testimonials-quote {
+    font-size: 14px;
+  }
+
+}

@@ -1,36 +1,42 @@
-import React from 'react'
-import imageb from '../assets/imageb.png'
+import React from 'react';
+import imageb from '../assets/imageb.png';
+import '../styles//Testimonials.css';
 
 function Testimonials() {
   return (
-    <div>
-      <div style={{width:'100%',height:'600px',backgroundColor:'#3670FF',display:'flex',flexWrap:'wrap',color:'white',justifyContent:'space-evenly'}}>
-        <div className='left' style={{width:'500px',display:'block',height:'600px',fontSize:'20px',marginTop:'40px'}}>
-          <h1 style={{fontFamily:'CoveredByYourGrace'}}>Testimonials</h1>
-          <br/>
-          <div style={{marginTop:'30px',fontFamily:'CabinetGrotesk'}}>
-          <p>"All I knew was a little of Python and an amnition to learn something new by the end of the hackathon.I was amazed at what I did .Looking forward to building more and attending more hackathons"</p>
-          <h4>Ancy <br/>Biomedical Student ,LBS</h4>
-          
-
-          </div>
-          
-          <div style={{marginTop:'60px'}}>
-          <p>"I learnt a new tech over a night,that's something I never thought I could do,even in my wildest dreams"</p>
-          <h4>Khadeeja<br/>LBS Institute Of Technology for Women</h4>
-         
+    <div className="testimonials-container">
+      <div className="testimonials-content">
+        <div className="testimonials-left">
+          <h1 className="testimonials-title">Testimonials</h1>
+          <br />
+          <div className="testimonials-quote">
+            <p>
+              "All I knew was a little of Python and an ambition to learn something
+              new by the end of the hackathon. I was amazed at what I did. Looking
+              forward to building more and attending more hackathons."
+            </p>
+            <h4>Ancy <br />Biomedical Student, LBS</h4>
           </div>
 
-         
-        
-        </div>
-        <div className='right' style={{width:'500px',height:'600px'}}>
-        <img src={imageb} alt='' style={{width:'500px',height:'600px'}}/>
+          <div className="testimonials-quote" style={{ marginTop: '60px' }}>
+            <p>
+              "I learnt a new tech over a night, that's something I never thought
+              I could do, even in my wildest dreams."
+            </p>
+            <h4>Khadeeja<br />LBS Institute Of Technology for Women</h4>
+          </div>
         </div>
 
+        <div className="testimonials-right">
+          <img
+            src={imageb}
+            alt=""
+            className="testimonials-image"
+          />
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Testimonials
+export default Testimonials;
