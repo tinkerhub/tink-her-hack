@@ -1,4 +1,4 @@
-/* Hero.css */
+
 
 .hero-container {
   width: 100vw;
@@ -12,6 +12,8 @@
   position: relative;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-registrations {
@@ -50,76 +52,90 @@
 .hero-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: absolute;
   z-index: 1;
   color: white;
   left: 490px;
-  top: 200px;
+  top: 150px;
   font-size: 30px;
   text-align: center;
   font-family: 'CabinetGrotesk', sans-serif;
 }
+.hero-content p{
+  margin-top: 0;
+ font-size:'15px';
+}
+.hero-content{
+  font-weight: bold;
+}
 
 .hero-logo {
-  width: 130px;
-  height: 50px;
-  margin-top: -90px;
-  margin-left: 210px;
+  width: 7vw;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .hero-statistics {
-  width: 300px;
-  height: 100px;
-  position: absolute;
-  z-index: 1;
-  left: 420px;
-  top: 200px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  margin-top: 350px;
+  gap: 0;
+}
+
+.hero-image-container {
+  position: relative;
+  margin-bottom: 0;
+ 
 }
 
 .hero-count-image {
-  margin-top: 100px;
-  margin-left: 20px;
+  width: 100%; 
 }
 
 .hero-stats-text {
-  width: 100%;
+  position: absolute; 
+  top: 40%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
   font-family: 'CoveredByYourGrace', cursive;
   font-size: 30px;
-  color: white;
+  color: white; 
   text-align: center;
-  margin-left: 250px;
-  margin-top: -130px;
-}
-
-.hero-stats-text p{
-  margin-top: -150px;
-  margin-left:-100px;
- 
 }
 
 .hero-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
+
+  gap: 0; 
+  margin-top: 0; 
+
 }
 
 .hero-badge {
   width: 300px;
   height: 300px;
-  margin-left: -450px;
-  margin-top: -200px;
+  gap: 0; 
+  margin-top: -150px; 
+  
 }
 
 .hero-main-image {
   width: 100vw;
-  margin-top: -170px;
-  margin-left: -420px;
+  gap: 0; 
+  margin-top: -260px; 
+
 }
 
-/* Mobile Responsiveness */
+
 @media (max-width: 480px) {
-  .hero-background {
-  
+  .hero-background { 
     height: 510px;
+    width: 100vw;
+    margin: 0;
   }
 
   .hero-registrations {
@@ -135,46 +151,48 @@
   }
 
   .hero-registrations button {
-    width: 120px;
+    width: 20vw;
     height: 25px;
     font-size: 12px;
   }
 
   .hero-content {
-    left: 30px;
+    left: 14vw;
     top: 120px;
     font-size: 15px;
   }
   
   .hero-content p {
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
-    margin-left: 30px;
+   margin-left: 40px;
+   margin: 0;
   
   }
   .hero-content h1{
     margin-left: 50px;
     margin-top: 40px;
+    font-size: 35px;
   }
 
 
   .hero-logo {
     width: 60px;
     height: 30px;
-    margin-left: 130px;
+  
     margin-top: 10px;
   }
 
   .hero-statistics {
     left: 20px;
-    top: 300px;
+    top: 200px;
   }
 
   .hero-count-image {
-    margin-left: 50px;
+    margin-left: 30px;
     width: 250px;
     height: 100px;
-    margin-top: -30px;
+    margin-top: -70px;
   }
 
   .hero-stats-text {
@@ -184,19 +202,25 @@
     margin-left: 70px;
   }
 
+  .hero-stats-text p{
+    width: 50vw;
+    margin-top: -130px;
+    margin-left: -90px;
+  }
+
   .hero-badge {
     width: 100px;
     height: 100px;
-    margin-left: -30px;
+ 
     margin-top: -250px;
   }
 
   .hero-main-image {
-    width: 102vw;
-    margin-left: -30px;
-    margin-top: -50px;
+    width: 100vw;
+   
+    margin-top:-6vw;
   }
   .hero-images{
-    margin-top: 250px;
+    margin-top: 170px;
   }
 }

@@ -53,16 +53,18 @@
 
   .previous-image {
     border-radius: 15px;
+    width: 70vw;
   }
   .previous-container{
-    margin-top: 1000px;
+   
     width: 95vw;
+    height: 400px;
 
   
   }
   .previous-content{
-    width: 360px;
-    height: 300px;
+    width: 100vw;
+    margin-top: 50px;
 
   }
 }

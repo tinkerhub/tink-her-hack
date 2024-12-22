@@ -74,7 +74,7 @@
 
 @media (max-width: 480px) {
   .impact-container{
-   
+     width: 100vw;
      margin-top: -250px;
    
   }

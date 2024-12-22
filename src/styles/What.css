@@ -24,8 +24,11 @@
 
 .what-text {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 250px;
  margin-left: 650px;
+}
+.what-text p{
+  margin: 0;
 }
 
 .what-title {
@@ -73,6 +76,7 @@
 
 /* Yearly stats sections */
 .yearly-stats {
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   margin-top: -100px;
@@ -93,7 +97,7 @@
 
 .yellow-section {
   background-color: #fcd600;
-  width: 50vw;
+  width: 100vw;
  
   
 }
@@ -145,21 +149,23 @@
 
 @media (max-width: 480px) {
   .what-container{
-    height: 600px;
+    width: 100vw;
+    height: 1500px;
   }
   .what-title {
     font-size: 40px;
     margin-top: 80px;
   }
   .what-text{
-    margin-left: 10px;
-    margin-top: -5px;
+    margin-left: 30px;
+    margin-top: 70px;
   }
   .what-text p{
+    margin: 0;
    
   }
   .what-description{
-    margin-left: 10px;
+    margin-left: 30px;
     font-size: 15px;
    
   }
@@ -181,7 +187,7 @@
   }
 
   .stats-section {
-    padding: 10px;
+   
 
   }
   .yearly-stats{
@@ -189,22 +195,39 @@
   
   }
   .yellow-section{
-    margin-top: 50px;
     width: 100vw;
+    overflow: clip;
+    margin-top: 50px;
+    height: 500px;
+   
+   
   }
   .yellow-section h2{
   margin-top: 70px;
   }
-  .yellow-section img{
-    width: 320px;
+  .yellow-section p{
+    font-size: 15px;
+  }
+  .yellow-section-img{
+    width: 75vw;
     height: 150px;
-    margin-left: 40px;
+    margin-left: 20px;
+    overflow: clip;
+  }
+  .white-section{
+    width: 100vw;
+    overflow: clip;
+    height: 500px;
+   
+  }
+  .white-section p{
+    font-size: 15px;
   }
   .white-section h2{
     margin-top: 40px;
   }
   .white-section img{
-    width: 320px;
+    width: 75vw;
     height: 150px;
     margin-left: 40px;
     margin-top: 30px;

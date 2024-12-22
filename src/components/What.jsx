@@ -45,7 +45,7 @@ function What() {
             bigger. <strong>Five venues</strong> lit up as women proved they could build technology, many writing their
             first lines of code.
           </p>
-          <img src={yellow} alt="" />
+          <img src={yellow} alt="" className='yellow-section-img' />
         </div>
         <div className="stats-section white-section">
           <h2>2023-’24</h2>
