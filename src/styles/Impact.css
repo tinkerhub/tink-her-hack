@@ -75,7 +75,7 @@
 @media (max-width: 480px) {
   .impact-container{
      width: 100vw;
-     margin-top: -250px;
+     
    
   }
   .impact-background{
@@ -85,12 +85,13 @@
     font-size: 30px;
   }
   .impact-stats{
-   
+    
     height: 50px;
+   
   }
 
   .impact-stat{
-    
+    margin: 0;
     height: 50px;
   }
   .impact-stat h1 {
@@ -104,6 +105,6 @@
 
   .impact-footer {
     font-size: 14px;
-    margin-top: 1100px;
+    margin-top: 260vw;
   }
 }

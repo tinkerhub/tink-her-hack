@@ -143,7 +143,7 @@
     height: 50px;
     margin-left: 10vw;
     margin-top: 30px;
-    border-radius: 0;
+    border-radius: 5px;
   }
 
   .hero-registrations h1 {
@@ -151,9 +151,11 @@
   }
 
   .hero-registrations button {
-    width: 20vw;
+    width: 30vw;
     height: 25px;
     font-size: 12px;
+    margin-top: -5px;
+  
   }
 
   .hero-content {

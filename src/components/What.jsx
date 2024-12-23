@@ -39,7 +39,7 @@ function What() {
       
        
         <div className="stats-section yellow-section">
-          <h2>2022-'23</h2>
+          <h2>2022-23</h2>
           <p>
             What started as Kerala's first women-only overnight hackathon with 500 curious minds turned into something
             bigger. <strong>Five venues</strong> lit up as women proved they could build technology, many writing their
@@ -48,7 +48,7 @@ function What() {
           <img src={yellow} alt="" className='yellow-section-img' />
         </div>
         <div className="stats-section white-section">
-          <h2>2023-’24</h2>
+          <h2>2023-24</h2>
           <p>
             The spark became a movement. 1,200 women across <strong>28 venues</strong> built 300 projects in a single
             night. From college students to working professionals, they showed up, stayed up, and built up. Some landed
