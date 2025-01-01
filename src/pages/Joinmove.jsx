@@ -113,6 +113,7 @@ function Joinmove() {
             <br></br> arrangements - just bring your experience and that memory{' '}
             <br></br> of your first project.
           </p>
+          <div className='mentordiv'>
 
           <Link
             to="https://bit.ly/thhmentors
@@ -134,6 +135,9 @@ function Joinmove() {
               READ MORE
             </button>
           </Link>
+
+          </div>
+          
         </div>
 
         <div className="third-right">
@@ -210,16 +214,14 @@ function Joinmove() {
         <div className="five-head">
           <p>
             GLIMPSES FROM <br></br>{' '}
-            <span
-              style={{ fontSize: '3vw', fontWeight: '900', color: '#DE3D3D' }}
+            <span className='pic1'
+              style={{ }}
             >
               TINK-HER-HACK
             </span>
-            <span
+            <span className='pic2'
               style={{
-                fontFamily: 'CoveredByYourGrace',
-                color: '#DE3D3D',
-                fontSize: '3vw',
+             
               }}
             >
               2.0
@@ -279,7 +281,11 @@ function Joinmove() {
             </div>
           </div>
 
+          <Link to='https://forms.gle/JgfoD1fE8845ectU7'>
+            
           <button className="sixbtn">I'M IN!</button>
+          </Link>
+
         </div>
         <div className="six-right">
           <img src={last} alt="" />

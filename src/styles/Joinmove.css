@@ -407,6 +407,16 @@ flex-direction: column;
   text-align: center;
   
 }
+.pic1{
+  font-size: 3vw;
+  font-weight: 900;
+  color: #DE3D3D;
+}
+.pic2{
+  font-family: CoveredByYourGrace;
+  color: #DE3D3D;
+  font-size: 3vw;
+}
 .imgdiv{
   display: flex;
   flex-direction: column;
@@ -563,8 +573,9 @@ flex-direction: column;
   }
 
   .potrait {
-    width: 30vw;
-    margin-top: -10vw;
+    width: 40vw;
+    height: 50vw;
+    margin-top: -25vw;
   }
 
   .red {
@@ -613,7 +624,7 @@ flex-direction: column;
   .sec-left p {
     margin-top: -17vw;
     font-size: 7vw;
-    margin-left: 5vw;
+    margin-left: 8vw;
   }
   .res{
     margin-left:20vw ;
@@ -660,7 +671,7 @@ flex-direction: column;
 
 @media (max-width: 480px) {
   .third {
-    height: 60vw;
+    height: 90vw;
     margin-top: 0;
   }
 
@@ -671,7 +682,7 @@ flex-direction: column;
 
   .third-left {
     text-align: left;
-    padding-left: 3vw;
+    padding-left: 4vw;
     order: 0;
   }
 
@@ -681,21 +692,29 @@ flex-direction: column;
   }
 
   .third-right img {
-    width: 37vw;
-    height: auto;
-    margin-top: 5vw;
+    width: 40vw;
+    height: 45vw;
+    margin-top: 25vw;
+    rotate: -10deg;
+    margin-left: 10vw;
   }
 
   .third-p-one {
-    font-size: 5vw;
+    font-size: 7vw;
     margin-left: 0;
   }
 
   .third-p-two {
-    font-size: 1.2vw;
-    line-height: 2vw;
-    margin-top: -1vw;
+    font-size: 3vw;
+    line-height:normal;
+    margin-top: -4vw;
     text-align: left;
+  }
+  .mentordiv{
+    width: 100vw;
+    margin-left: 15vw;
+    display: flex;
+    gap: 7vw;
   }
 
   .btn1,
@@ -704,6 +723,7 @@ flex-direction: column;
     height: 7vw;
     font-size: 1.7vw;
     margin-left: 0;
+ 
   }
 
   .btn2 {
@@ -711,6 +731,9 @@ flex-direction: column;
   }
 }
 @media  (max-width: 480px) {
+  .fourth{
+    height: 120vw;
+  }
   .yell {
     font-size: 4vw; 
     padding: 2vw;
@@ -721,42 +744,49 @@ flex-direction: column;
   height: 5vw;
  }
  .black{
-  height: 80vw;
+  height: 120vw;
  }
   .black p {
-    font-size: 3vw;
+    font-size: 7vw;
   }
 
   .para {
     font-size: 3vw;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    padding-left: 3vw;
+    padding-right: 3vw;
+   
   }
-
+  
   .p-div {
-    width: 90%;
-    max-width: 90vw;
+    width: 100vw;
+
+  }
+  .p-div p{
+    font-size: 3vw;
   }
   .count{
-    margin-top: -50vw;
+    
   }
 
   .count-1, .count-2, .count-3 {
     width: 100%;
-    justify-content: center;
-    gap: 0;
-    margin-top: 4vw;
+  
   }
 
   .count-1, .count-2, .count-3 {
     flex-direction: column;
     align-items: center;
+  }
+  .count-2{
+    margin-top: 6vw;
   }
 
   .count-11, .count-12 {
     font-size: 6vw;
     height: 12vw;
   }
+ 
 
   .count-2 {
     font-size: 6vw;
@@ -771,22 +801,62 @@ flex-direction: column;
 }
 @media (max-width: 480px) {
   .five {
-    height: 80vw;
+    height: 150vw;
     font-size: 5vw;
     margin-top: 20vw;
   }
+  .five-head p{
+    font-size: 5vw;
+  }
+  .five-head p span{
+    font-size: 7vw;
+  }
+.pic1{
+  font-size: 7vw;
+}
+.pic2{
+  font-size: 5vw;
+}
+ .imgdiv{
+  display: flex;
+  flex-direction: row;
 
+ }
   .past img, .pastdown img {
-    width: 80vw; /* Take up more space on very small screens */
-    height: 50vw; /* Adjust height to maintain aspect ratio */
+    width: 40vw; 
+    height: 25vw; 
+    border-radius: 8vw;
+    padding: 3vw;
   }
 
   .past {
-    justify-content: center; /* Center images on very small screens */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 57vw; 
+    
   }
-
+  .past1{
+    margin-left: 1vw;
+  }
+  .past6{
+    margin-left: 2vw;
+  }
+  .past4{
+margin-left: 10vw;
+  }
+  .past7,.past9{
+margin-left: -5vw;
+  }
+  .past8{
+    margin-left: -3vw;
+  }
   .pastdown {
-    margin-top: 5vw; /* Add margin for spacing between sections */
+    margin-top: 5vw; 
+    display: flex;
+    flex-direction: column;
+    
+
   }
 }
 
@@ -797,7 +867,7 @@ flex-direction: column;
   }
 
   .p1 {
-    font-size: 8vw; /* Further adjust font size */
+    font-size: 7vw; /* Further adjust font size */
     margin-left: 5vw;
   }
 
@@ -808,8 +878,9 @@ flex-direction: column;
   }
 
   .six-right img {
-    width: 80vw;
-    height: 50vw;
+    width: 50vw;
+    height: 80vw;
+    margin-top: 20vw;
   }
 
   .list {
@@ -819,58 +890,38 @@ flex-direction: column;
   }
 
   .uldiv {
- 
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
   }
 
   .sixbtn {
-    font-size: 3vw;
-    width: 20vw;
-    height: 3vw;
+    width: 22vw;
+    height: 8vw;
+    font-size: 2vw;
     margin-left: 5vw;
   }
 }
-@media (max-width: 768px) {
-  .seven {
-    height: 15vw; /* Adjust height for smaller screens */
-    padding: 0 5vw; /* Add more padding on smaller screens */
-    flex-direction: column; /* Stack the content vertically */
-    justify-content: center; /* Align items at the center */
-  }
 
-  .seven-1 img {
-    width: 10vw; /* Increase logo size on mobile */
-    margin-bottom: 2vw;
-  }
-
-  .seven-2 {
-    gap: 10px;
-    flex-direction: row; /* Keep icons in a row on small screens */
-    justify-content: center;
-  }
-
-  .seven-2 img {
-    width: 6vw; /* Increase social media icon size for mobile */
-    height: 6vw;
-  }
-}
-
-/* For very small screens (extra small mobile) */
 @media (max-width: 480px) {
   .seven {
-    height: 20vw; /* Further increase height for very small screens */
+    height: 18vw; 
+
   }
 
   .seven-1 img {
-    width: 12vw; /* Further increase logo size */
+    width: 12vw; 
   }
 
   .seven-2 {
-    gap: 8px;
+   
+   gap: 10vw;
+   align-items: center;
   }
 
   .seven-2 img {
-    width: 8vw; /* Further increase icon size */
+    margin-left: -20vw;
+    width: 8vw; 
     height: 8vw;
   }
 }
