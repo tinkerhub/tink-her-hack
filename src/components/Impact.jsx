@@ -1,6 +1,6 @@
 import React from 'react';
-import backimg from '../assets/Frame4.png';
-import '../styles/Impact.css'; // Import the CSS file
+import backimg from '../assets/Frame4.webp';
+import '../styles/Impact.css'; 
 
 function Impact() {
   return (

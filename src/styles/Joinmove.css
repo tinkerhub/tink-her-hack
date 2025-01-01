@@ -2,7 +2,7 @@
   display: block;
 }
 .first{
-  background-image:url('../assets/Frame4.png') ;
+  background-image:url('../assets/Frame4.webp') ;
   width: 100vw;
   height: 40vw;
   display: flex;
@@ -160,7 +160,7 @@
 
 }
 .third{
-  background-image: url('../assets/Frame2.png');
+  background-image: url('../assets/Frame2.webp');
   width: 100vw;
   height: 39vw;
   display: flex;

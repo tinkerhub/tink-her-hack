@@ -1,6 +1,6 @@
 import React from 'react';
-import image from '../assets/glimpse.jpg'; // Ensure the path and file exist
-import '../styles/Previous.css'; // Import the CSS file
+import image from '../assets/glimpse.webp'; 
+import '../styles/Previous.css'; 
 
 function Previous() {
   return (

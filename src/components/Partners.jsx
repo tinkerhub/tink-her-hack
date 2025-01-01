@@ -1,10 +1,10 @@
 import React from 'react';
-import one from '../assets/1.png';
-import two from '../assets/2.png';
-import three from '../assets/wielogo.jpg';
-import four from '../assets/4.png';
-import five from '../assets/5.png';
-import six from '../assets/6.png';
+import one from '../assets/1.webp';
+import two from '../assets/2.webp';
+import three from '../assets/wielogo.webp';
+import four from '../assets/4.webp';
+import five from '../assets/5.webp';
+import six from '../assets/6.webp';
 import '../styles/Partners.css';
 
 function Partners() {

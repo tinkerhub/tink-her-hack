@@ -1,5 +1,5 @@
 import React from 'react'
-import  image from '../assets/Frame4.png'
+import  image from '../assets/Frame4.webp'
 
 
 function Why() {

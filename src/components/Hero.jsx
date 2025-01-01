@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/Hero.css'; // Import the CSS file
-import image from '../assets/Frame1.jpg';
-import image2 from '../assets/heroimg.png';
-import image3 from '../assets/count.png';
-import badge from '../assets/badge.png';
-import logo from '../assets/logo.png';
+import image from '../assets/Frame1.webp';
+import image2 from '../assets/heroimg.webp';
+import image3 from '../assets/count.webp';
+import badge from '../assets/badge.webp';
+import logo from '../assets/logo.webp';
 
 function Hero() {
   return (

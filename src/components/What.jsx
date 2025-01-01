@@ -1,9 +1,9 @@
 import React from 'react';
 
-import imagepaper from '../assets/papertear.png';
-import yellow from '../assets/yellowimg.png';
-import white from '../assets/whiteimg.png';
-import '../styles/What.css'; // Import the CSS file
+import imagepaper from '../assets/papertear.webp';
+import yellow from '../assets/yellowimg.webp';
+import white from '../assets/whiteimg.webp';
+import '../styles/What.css';
 
 
 function What() {

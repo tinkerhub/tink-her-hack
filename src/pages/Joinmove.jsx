@@ -1,24 +1,24 @@
 import React from 'react';
 import '../styles/Joinmove.css';
 import { Link } from 'react-router-dom';
-import potrait from '../assets/potrait.png';
-import count from '../assets/count.png';
-import people from '../assets/People.png';
-import mentor from '../assets/mentor.png';
-import Union from '../assets/Union.png';
-import last from '../assets/LAST.png';
-import logo from '../assets/logo.png';
-import insta from '../assets/insta.png';
-import linkdin from '../assets/linkdin.png';
-import past1 from '../assets/past1.jpeg';
-import past2 from '../assets/past2.jpg';
-import past3 from '../assets/past3.jpg';
-import past4 from '../assets/past4.jpg';
-import past5 from '../assets/past5.JPG';
-import past7 from '../assets/past7.JPG';
-import past8 from '../assets/past8.jpg';
-import past9 from '../assets/past9.jpg';
-import past6 from '../assets/past6.jpg';
+import potrait from '../assets/potrait.webp';
+import count from '../assets/count.webp';
+import people from '../assets/People.webp';
+import mentor from '../assets/mentor.webp';
+import Union from '../assets/Union.webp';
+import last from '../assets/LAST.webp';
+import logo from '../assets/logo.webp';
+import insta from '../assets/insta.webp';
+import linkdin from '../assets/linkdin.webp';
+import past1 from '../assets/past1.webp';
+import past2 from '../assets/past2.webp';
+import past3 from '../assets/past3.webp';
+import past4 from '../assets/past4.webp';
+import past5 from '../assets/past5.webp';
+import past7 from '../assets/past7.webp';
+import past8 from '../assets/past8.webp';
+import past9 from '../assets/past9.webp';
+import past6 from '../assets/past6.webp';
 
 function Joinmove() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import imageb from '../assets/imageb.png';
+import imageb from '../assets/imageb.webp';
 import '../styles//Testimonials.css';
 
 function Testimonials() {

@@ -1,12 +1,12 @@
 import React from 'react';
-import image from '../assets/Frame2.png';
-import image1 from '../assets/power.jpg';
-import image3 from '../assets/image3.jpg';
-import imageone from '../assets/imageone.png';
-import imagetwo from '../assets/imagetwo.png';
-import imagethree from '../assets/imagethree.png';
-import imagefour from '../assets/imagefour.png';
-import '../styles/Five.css'; // Import CSS file
+import image from '../assets/Frame2.webp';
+import image1 from '../assets/power.webp';
+import image3 from '../assets/image3.webp';
+import imageone from '../assets/imageone.webp';
+import imagetwo from '../assets/imagetwo.webp';
+import imagethree from '../assets/imagethree.webp';
+import imagefour from '../assets/imagefour.webp';
+import '../styles/Five.css'; 
 
 function Five() {
   return (
