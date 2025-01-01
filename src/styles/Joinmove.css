@@ -42,8 +42,7 @@
   position: absolute;
   margin-left: -8vw;
   margin-top: 15vw;
-  
-
+  z-index: -1;
 }
 .whitebtn {
   width: 12vw;
@@ -86,6 +85,16 @@
 
 .venue-btn{
   transition: box-shadow 0.3s, transform 0.3s;
+  background-color: #FFD900;
+  color: black;
+  font-weight: bold;
+  width: 12vw;
+  height: 3vw;
+  border-radius: 10px;
+  border: none;
+  box-shadow:
+    0 4px 6px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
 }
 
 .venue-btn:hover,
@@ -96,6 +105,15 @@
 
 .venue-read{
   transition: box-shadow 0.3s, transform 0.3s;
+  color: black;
+  font-weight: bold;
+  width: 12vw;
+  height: 3vw;
+  border-radius: 10px;
+  border: none;
+  box-shadow:
+    0 4px 6px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15);
+  cursor: pointer;
 }
 .venue-read:hover,
 .venue-read:focus {
@@ -105,8 +123,6 @@
 
 
 .second{
-  position: absolute;
-  z-index: 2;
   width: 100vw;
   height: 46.3vw;
   background-color: #006DFF;
@@ -147,7 +163,6 @@
   background-image: url('../assets/Frame2.png');
   width: 100vw;
   height: 39vw;
-  margin-top: 46vw;
   display: flex;
   color: white;
   font-family: 'CabinetGrotesk', sans-serif;
@@ -527,7 +542,6 @@ flex-direction: column;
   .first {
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 70vw;
     margin-top: 0;
     justify-content: space-between;
@@ -536,7 +550,7 @@ flex-direction: column;
   .left {
     width: 50%;
     text-align: left;
-    padding: 0 5vw;
+  
   }
 
   .right {
@@ -550,7 +564,7 @@ flex-direction: column;
 
   .potrait {
     width: 30vw;
-   
+    margin-top: -10vw;
   }
 
   .red {
@@ -558,18 +572,28 @@ flex-direction: column;
   }
 
   .head {
-    font-size: 7vw;
+    font-size: 8vw;
+  }
+  .head span p{
+   font-size: 5vw;
   }
 
   .cont {
     font-size: 3vw;
+   padding-top: 4vw;
   }
-
+  .cont p{
+    margin-top: 2vw;
+  }
+  .left button{
+    margin-top: 2vw;
+  }
   .whitebtn,
   .yelbtn {
-    width: 15vw;
-    height: 3vw;
-    font-size: 1vw;
+    width: 23vw;
+    height: 7vw;
+    font-size: 1.7vw;
+
   }
 }
 
@@ -578,6 +602,7 @@ flex-direction: column;
     align-items: center;
     height:100vw; 
     display: flex;
+    margin-top: 0;
   }
 
   .sec-left {
@@ -602,8 +627,8 @@ flex-direction: column;
     width: 50%; 
     display: flex;
     flex-wrap: wrap;
-
-    margin-left: -30vw;
+    margin-left: -25vw;
+   
   }
 
   .sec-right p {
@@ -612,30 +637,31 @@ flex-direction: column;
     text-align: center;
     margin-top: 20vw;
   }
-
+  .sec-right button{
+    width: 30vw; 
+    height: 9vw; 
+  }
   .but {
-    width: 20vw;
-    height: 5vw;
+    margin-left: -20vw;
     gap: 2vw;
     margin-top: 2vw;
     display: flex;
-    justify-content: center;
-    align-items: center;
+ 
     
   }
 
   .venue-btn,
   .venue-read {
-    width: 2vw;
-    height: 3vw;
-    font-size: 1vw;
+    width: 30vw; 
+    height: 9vw; 
+    font-size: 2vw; 
   }
 }
 
 @media (max-width: 480px) {
   .third {
     height: 60vw;
-    margin-top: 100vw;
+    margin-top: 0;
   }
 
   .third-left,
@@ -674,9 +700,9 @@ flex-direction: column;
 
   .btn1,
   .btn2 {
-    width: 12vw;
-    height: 3vw;
-    font-size: 1vw;
+    width: 23vw;
+    height: 7vw;
+    font-size: 1.7vw;
     margin-left: 0;
   }
 

@@ -1,64 +1,66 @@
 import React from 'react';
 import '../styles/Joinmove.css';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import potrait from '../assets/potrait.png';
 import count from '../assets/count.png';
 import people from '../assets/People.png';
 import mentor from '../assets/mentor.png';
-import Union from '../assets/Union.png'
+import Union from '../assets/Union.png';
 import last from '../assets/LAST.png';
-import logo from '../assets/logo.png'
-import insta from '../assets/insta.png'
-import linkdin from '../assets/linkdin.png'
-import past1 from '../assets/past1.jpeg'
-import past2 from '../assets/past2.jpg'
-import past3 from '../assets/past3.jpg'
-import past4 from '../assets/past4.jpg'
-import past5 from '../assets/past5.JPG'
-import past7 from '../assets/past7.JPG'
-import past8 from '../assets/past8.jpg'
-import past9 from '../assets/past9.jpg'
-import past6 from '../assets/past6.jpg'
-
+import logo from '../assets/logo.png';
+import insta from '../assets/insta.png';
+import linkdin from '../assets/linkdin.png';
+import past1 from '../assets/past1.jpeg';
+import past2 from '../assets/past2.jpg';
+import past3 from '../assets/past3.jpg';
+import past4 from '../assets/past4.jpg';
+import past5 from '../assets/past5.JPG';
+import past7 from '../assets/past7.JPG';
+import past8 from '../assets/past8.jpg';
+import past9 from '../assets/past9.jpg';
+import past6 from '../assets/past6.jpg';
 
 function Joinmove() {
   return (
     <div className="main">
-   <div className="first">
-  <div className="left">
-    <p className="head">
-      TINK-HER-<br />
-      HACK.
-      <span
-        style={{
-          fontFamily: 'CoveredByYourGrace',
-          fontSize: '5vw',
-          color: '#FFD900',
-        }}
-      >
-        3.0
-      </span>
-    </p>
-    <p className="cont">
-      4,000 women are about to begin their tech journey.<br />
-      Build with them. Host them. Guide them. Support them. Choose<br />
-      your role in their story.
-    </p>
-    <button className="whitebtn">DOWNLOAD THE APP</button>
-    <button className="yelbtn">VISIT OUR WEBSITE</button>
-  </div>
-  <div className="right">
-    <img src={potrait} alt="Potrait" className="potrait" />
-    <div className="red">
-      <img src={count} alt="Red Count" className="red" />
-    </div>
-  </div>
-</div>
+      <div className="first">
+        <div className="left">
+          <p className="head">
+            TINK-HER-
+            <br />
+            HACK.
+            <span
+              style={{
+                fontFamily: 'CoveredByYourGrace',
+                fontSize: '5vw',
+                color: '#FFD900',
+              }}
+            >
+              3.0
+            </span>
+          </p>
+          <p className="cont">
+            4,000 women are about to begin their tech journey.
+            <br />
+            Build with them. Host them. Guide them. Support them. Choose
+            <br />
+            your role in their story.
+          </p>
+          <button className="whitebtn">DOWNLOAD THE APP</button>
+          <button className="yelbtn">VISIT OUR WEBSITE</button>
+        </div>
+        <div className="right">
+          <img src={potrait} alt="Potrait" className="potrait" />
+          <div className="red">
+            <img src={count} alt="Red Count" className="red" />
+          </div>
+        </div>
+      </div>
 
       <div className="second">
         <div className="sec-left">
           <p>
-            HOST THE <br></br> <span className='res'>HACKATHON.</span>
+            HOST THE <br></br> <span className="res">HACKATHON.</span>
           </p>
 
           <img src={people} alt="" className="people" />
@@ -75,39 +77,24 @@ function Joinmove() {
           </p>
 
           <div className="but">
-            <Link to='https://bit.ly/thhvenue'>
-
-            <button
-            style={{ 
-              backgroundColor: '#FFD900',
-              color: 'black',
-              fontWeight: 'bold',
-              width: '12vw',
-              height: '3vw',
-              borderRadius: '10px',
-              border: 'none',
-              boxShadow: '0 4px 6px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15)',
-              cursor: 'pointer',
-            }} className='venue-btn'
-            
-            >
-              APPLY AS A VENUE
-            </button>
-
+            <Link to="https://bit.ly/thhvenue">
+              <button
+                className="venue-btn"
+              >
+                APPLY AS A VENUE
+              </button>
             </Link>
-           
-           <Link to='https://tinkerhub-foundation.notion.site/HOST-TINK-HER-HACK-AT-YOUR-VENUE-30fe3eb870844bd890a04af597f8006c?pvs=4 '>
 
-           <button style={{ color: 'black', fontWeight: 'bold', width: '12vw',
-              height: '3vw',
-              borderRadius: '10px',
-              border: 'none',
-              boxShadow: '0 4px 6px rgba(255, 255, 255, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15)',
-              cursor: 'pointer', }} className='venue-read'>
-              READ MORE
-            </button>
-           </Link>
-        
+            <Link to="https://tinkerhub-foundation.notion.site/HOST-TINK-HER-HACK-AT-YOUR-VENUE-30fe3eb870844bd890a04af597f8006c?pvs=4 ">
+              <button
+                style={{
+                
+                }}
+                className="venue-read"
+              >
+                READ MORE
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -126,149 +113,191 @@ function Joinmove() {
             <br></br> arrangements - just bring your experience and that memory{' '}
             <br></br> of your first project.
           </p>
-          
-          <Link to='https://bit.ly/thhmentors
-' > 
 
-          <button
-            className="btn1"
-            style={{ color: 'white', fontWeight: 'bold' }} 
+          <Link
+            to="https://bit.ly/thhmentors
+"
           >
-            APPLY AS A MENTOR
-          </button>
-          
+            <button
+              className="btn1"
+              style={{ color: 'white', fontWeight: 'bold' }}
+            >
+              APPLY AS A MENTOR
+            </button>
           </Link>
-          
-          <Link to='https://tinkerhub-foundation.notion.site/BE-A-TINK-HER-HACK-MENTOR-9daf6b57fb634d3390a7a977715835a8?pvs=4 '>
-          <button
-            className="btn2"
-            style={{ color: 'black', fontWeight: 'bold' }}
-          >
-            READ MORE
-          </button>
+
+          <Link to="https://tinkerhub-foundation.notion.site/BE-A-TINK-HER-HACK-MENTOR-9daf6b57fb634d3390a7a977715835a8?pvs=4 ">
+            <button
+              className="btn2"
+              style={{ color: 'black', fontWeight: 'bold' }}
+            >
+              READ MORE
+            </button>
           </Link>
-          
         </div>
 
         <div className="third-right">
           <img src={mentor} alt="" />
         </div>
       </div>
-      <div className='fourth'>
-      <div className="yell">
- 
-    CONNECT WITH MAKERS ACROSS KERALA
-    <span><img src={Union} alt=""/></span>
-
- 
-</div>
-
-        <div className='black'>
-            <p style={{marginTop:'0',color:'white'}}><span style={{fontFamily:'CoveredByYourGrace',color:'#FFD900'}}>our</span><br></br>ONLINE <br></br>COMMUNITY.</p>
-
-            <div className='para'>
-              <div className='p-div'>
-              <p>Building is always better when we do it together! The TinkerHack app connects you with our maker community. Share your doubts, celebrate small wins, find your build buddies, and be part of a community that grows together. Whether you're stuck on your first idea or celebrating your first deployment - there's always someone to share the moment with!</p>
-              </div>
-              <div className='p-div'>
-              <p>Every week, our O Penn Mic sessions bring you stories that feel close to home - tech leaders who started exactly where you are now, women who turned their curiosity into careers, and builders who once wondered if tech was for them. It's not just about learning to code - it's about finding your community and writing your story together.</p>
-              </div>
-          
-            </div>
-            <div className='count'>
-              <div className='count-1'>
-                <div className='count-11'>600+ <span>PROJECTS BUILT</span></div>
-                <div className='count-12'>120+ <span>MONTHLY PROJECTS</span></div>
-              </div>
-              <div className='count-2'>
-                   12,000+ <span>MAKERS</span>
-              </div>
-              <div className='count-3'>
-                 <div className='count-31'>
-                  15+<span>COMMUNITY <br></br> MEETUPS</span>
-                 </div>
-                 <div className='count-32'>
-                  20+ <span>OPEN MIC SESSIONS</span>
-                 </div>
-              </div>
-
-            </div>
-          
+      <div className="fourth">
+        <div className="yell">
+          CONNECT WITH MAKERS ACROSS KERALA
+          <span>
+            <img src={Union} alt="" />
+          </span>
         </div>
 
-      </div>
-      <div className='five'>
-        <div className='five-head'>
-          <p>GLIMPSES FROM <br></br> <span style={{fontSize:'3vw',fontWeight:'900',color:'#DE3D3D'}}>TINK-HER-HACK</span><span style={{fontFamily:'CoveredByYourGrace',color:'#DE3D3D',fontSize:'3vw'}}>2.0</span></p>
-        </div>
-         
-     <div className='imgdiv'>
-
-        <div className='past'>
-          <img src={past1} alt='' className='past1'/>
-          <img src={past2} alt='' className='past2'/>
-          <img src={past3} alt='' className='past3'/>
-          <img src={past4} alt='' className='past5'/>
-          <img src={past5} alt='' className='past4'/>
-         
-        </div>
-
-        <div className='pastdown'>
-          <img src={past6} alt='' className='past7'/>
-          <img src={past7} alt='' className='past8'/>
-          <img src={past8} alt='' className='past9'/>  
-          <img src={past9} alt='' className='past9'/> 
-       
-        </div>
-        </div>
-      </div>
-      <div className='six'>
-        <div className='six-left'>
-          <p className='p1'>STAY IN THE</p>
-          <span style={{fontSize:'7vw',fontFamily:'CoveredByYourGrace',color:'#FFD900',marginLeft:'4vw',marginTop:'-6vw'}}>loop.</span>
-          <p className='p2'>Never miss a moment of your tech journey.<br></br> 
-          Subscribe to our weekly newsletter where curiosity<br></br> meets creativity! 
+        <div className="black">
+          <p style={{ marginTop: '0', color: 'white' }}>
+            <span
+              style={{ fontFamily: 'CoveredByYourGrace', color: '#FFD900' }}
+            >
+              our
+            </span>
+            <br></br>ONLINE <br></br>COMMUNITY.
           </p>
-          <div className='list'>
-          <p className='p3'>WHAT YOU WILL GET</p>
-          <div className='uldiv'>
-          <ul>
-            <li>Bite-sized tech lessons every Monday </li>
-            <li>Open Mic highlights and discussion points</li>
-            <li>Weekly mini-challenges to test your skills</li>
-           </ul> 
-           <ul>
-            <li>TinkHerHack updates and success stories</li>
-            <li>Resources curated for beginners</li>
-            <li>Community spotlights and achievements</li>
-          </ul>
+
+          <div className="para">
+            <div className="p-div">
+              <p>
+                Building is always better when we do it together! The TinkerHack
+                app connects you with our maker community. Share your doubts,
+                celebrate small wins, find your build buddies, and be part of a
+                community that grows together. Whether you're stuck on your
+                first idea or celebrating your first deployment - there's always
+                someone to share the moment with!
+              </p>
+            </div>
+            <div className="p-div">
+              <p>
+                Every week, our O Penn Mic sessions bring you stories that feel
+                close to home - tech leaders who started exactly where you are
+                now, women who turned their curiosity into careers, and builders
+                who once wondered if tech was for them. It's not just about
+                learning to code - it's about finding your community and writing
+                your story together.
+              </p>
+            </div>
           </div>
-          
+          <div className="count">
+            <div className="count-1">
+              <div className="count-11">
+                600+ <span>PROJECTS BUILT</span>
+              </div>
+              <div className="count-12">
+                120+ <span>MONTHLY PROJECTS</span>
+              </div>
+            </div>
+            <div className="count-2">
+              12,000+ <span>MAKERS</span>
+            </div>
+            <div className="count-3">
+              <div className="count-31">
+                15+
+                <span>
+                  COMMUNITY <br></br> MEETUPS
+                </span>
+              </div>
+              <div className="count-32">
+                20+ <span>OPEN MIC SESSIONS</span>
+              </div>
+            </div>
           </div>
-        
-          <button className='sixbtn'>I'M IN!</button>
         </div>
-        <div className='six-right'>
-           <img src={last} alt="" />
+      </div>
+      <div className="five">
+        <div className="five-head">
+          <p>
+            GLIMPSES FROM <br></br>{' '}
+            <span
+              style={{ fontSize: '3vw', fontWeight: '900', color: '#DE3D3D' }}
+            >
+              TINK-HER-HACK
+            </span>
+            <span
+              style={{
+                fontFamily: 'CoveredByYourGrace',
+                color: '#DE3D3D',
+                fontSize: '3vw',
+              }}
+            >
+              2.0
+            </span>
+          </p>
         </div>
 
-        </div>
-        <div className='seven'>
-           <div className='seven-1'>
-               <img src={logo} alt=''/>
-           </div>
-           <div className='seven-2'>
-            <Link to='https://www.instagram.com/tinkerhub?igsh=cG10d2RyOXJjaG4x'>
-            <img src={insta} alt='' />
-            </Link>
-             <Link to='https://www.linkedin.com/company/tinkerhub'>
-             <img src={linkdin} alt=''/>
-             </Link>
-            
-           </div>
-        </div>
+        <div className="imgdiv">
+          <div className="past">
+            <img src={past1} alt="" className="past1" />
+            <img src={past2} alt="" className="past2" />
+            <img src={past3} alt="" className="past3" />
+            <img src={past4} alt="" className="past5" />
+            <img src={past5} alt="" className="past4" />
+          </div>
 
-   
+          <div className="pastdown">
+            <img src={past6} alt="" className="past7" />
+            <img src={past7} alt="" className="past8" />
+            <img src={past8} alt="" className="past9" />
+            <img src={past9} alt="" className="past9" />
+          </div>
+        </div>
+      </div>
+      <div className="six">
+        <div className="six-left">
+          <p className="p1">STAY IN THE</p>
+          <span
+            style={{
+              fontSize: '7vw',
+              fontFamily: 'CoveredByYourGrace',
+              color: '#FFD900',
+              marginLeft: '4vw',
+              marginTop: '-6vw',
+            }}
+          >
+            loop.
+          </span>
+          <p className="p2">
+            Never miss a moment of your tech journey.<br></br>
+            Subscribe to our weekly newsletter where curiosity<br></br> meets
+            creativity!
+          </p>
+          <div className="list">
+            <p className="p3">WHAT YOU WILL GET</p>
+            <div className="uldiv">
+              <ul>
+                <li>Bite-sized tech lessons every Monday </li>
+                <li>Open Mic highlights and discussion points</li>
+                <li>Weekly mini-challenges to test your skills</li>
+              </ul>
+              <ul>
+                <li>TinkHerHack updates and success stories</li>
+                <li>Resources curated for beginners</li>
+                <li>Community spotlights and achievements</li>
+              </ul>
+            </div>
+          </div>
+
+          <button className="sixbtn">I'M IN!</button>
+        </div>
+        <div className="six-right">
+          <img src={last} alt="" />
+        </div>
+      </div>
+      <div className="seven">
+        <div className="seven-1">
+          <img src={logo} alt="" />
+        </div>
+        <div className="seven-2">
+          <Link to="https://www.instagram.com/tinkerhub?igsh=cG10d2RyOXJjaG4x">
+            <img src={insta} alt="" />
+          </Link>
+          <Link to="https://www.linkedin.com/company/tinkerhub">
+            <img src={linkdin} alt="" />
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
