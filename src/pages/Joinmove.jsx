@@ -46,8 +46,13 @@ function Joinmove() {
             <br />
             your role in their story.
           </p>
+          <Link to='https://play.google.com/store/apps/details?id=com.hoomans.tinkerhub'>
           <button className="whitebtn">DOWNLOAD THE APP</button>
+          </Link>
+          <Link to='https://www.tinkerhub.org/'>
           <button className="yelbtn">VISIT OUR WEBSITE</button>
+          </Link>
+          
         </div>
         <div className="right">
           <img src={potrait} alt="Potrait" className="potrait" />
