@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Joinmove.css';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import potrait from '../assets/potrait.webp';
 import count from '../assets/count.webp';
@@ -21,9 +22,33 @@ import past9 from '../assets/past9.webp';
 import past6 from '../assets/past6.webp';
 
 function Joinmove() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+  
+    const toggleNav = () => {
+      setIsNavOpen(!isNavOpen);
+    };
   return (
     <div className="main">
       <div className="first">
+          <nav className="hero-nav">
+                  <div className="nav-toggle" onClick={toggleNav}>
+                    <div className="toggle-bar"></div>
+                    <div className="toggle-bar"></div>
+                    <div className="toggle-bar"></div>
+                  </div>
+                  <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+                    <Link style={{textDecoration:'none'}} to='/'>
+                    <li>Home</li>
+                    </Link>
+                    <Link style={{textDecoration:'none'}} to='/actions'>
+                    <li>Actions</li>
+                    </Link>
+                   <Link style={{textDecoration:'none'}}>
+                   <li>Participants</li>
+                   </Link>
+                   
+                  </ul>
+                </nav>
         <div className="left">
           <p className="head">
             TINK-HER-
