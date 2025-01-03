@@ -212,25 +212,27 @@ Link{
   
   }
  .hero-nav{
+ 
  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: black;
-    position: absolute;
-    top: 50px;
-    right: 1vw;
-    padding: 10px;
-    border-radius: 8px;
-  }
+
+ .nav-links {
+  display: flex
+  ;
+      gap: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 1vw;
+}
 
   .nav-links.open {
     display: flex;
+
   }
 
   .nav-links li {
     font-size: 16px;
-    margin: 5px 0;
+    padding-top: 2vw;
+
   }
 
   .hero-content {
