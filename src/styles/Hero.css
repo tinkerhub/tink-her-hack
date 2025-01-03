@@ -16,6 +16,10 @@ Link{
   right: 60px;
   z-index: 2;
 }
+.hero-nav .nav-links {
+  padding: 1vw; /* Example value */
+}
+
 
 .nav-toggle {
   display: none;
@@ -40,7 +44,7 @@ Link{
   display: flex;
   gap: 20px;
   margin: 0;
-  padding: 0;
+  padding: 2vw;
 }
 
 .nav-links li {
