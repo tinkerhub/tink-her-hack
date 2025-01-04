@@ -36,8 +36,8 @@ function Five() {
           <ul className="five-list">
             <li>4000 women building together creates momentum</li>
             <li>80 venues means local support systems</li>
-            <li>Peer learning boosts confidence</li>
-            <li>Creates visible role models in every community</li>
+            <li>Peer learning boosts confidence by 34%</li>
+            <li>200+ mentors helping students build their first project</li>
           </ul>
         </div>
       </div>

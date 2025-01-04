@@ -234,7 +234,7 @@ function Joinmove() {
                 </span>
               </div>
               <div className="count-32">
-                20+ <span>OPEN MIC SESSIONS</span>
+                20+ <span>OPEN MIC<br></br> SESSIONS</span>
               </div>
             </div>
           </div>

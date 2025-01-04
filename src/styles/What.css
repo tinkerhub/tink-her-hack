@@ -65,10 +65,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  max-width: 500px;
+  width: 50vw;
+ 
   color: black;
-  font-size: 25px;
+  font-size: 23px;
   font-weight: bold;
 }
 
@@ -111,7 +111,10 @@
   
 }
 .yellow-section p{
-  margin-left: 50px;
+  margin-left: 3.5vw;
+  text-align: justify;
+  padding-right: 2vw;
+
 }
 .yellow-section img{
   margin-left: 45px;
@@ -124,7 +127,9 @@
   margin-left: 50px;
 }
 .white-section p{
-  margin-left: 50px;
+  margin-left: 3.5vw;
+  text-align: justify;
+  padding-right: 2vw;
 }
 .white-section img{
   margin-left: 3vw;

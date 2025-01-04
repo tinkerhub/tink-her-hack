@@ -2,18 +2,20 @@
 .impact-container {
   margin-top: -50px;
   width: 100vw;
+  height: 140vh;
 }
 
 /* Background */
 .impact-background {
   width: 100vw;
-  min-height: 850px;
+ 
   color: white;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 140vh;
 }
 
 /* Header */

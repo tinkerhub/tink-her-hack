@@ -17,7 +17,7 @@ Link{
   z-index: 2;
 }
 .hero-nav .nav-links {
-  padding: 1vw; /* Example value */
+  padding: 1vw; 
 }
 
 
@@ -70,7 +70,7 @@ Link{
 }
 
 .hero-registrations {
-  width: 30vw;
+  width: 32vw;
   height: 100px;
   background-color: #FCD600;
   position: absolute;
@@ -94,12 +94,18 @@ Link{
 .hero-registrations button {
   width: 150px;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #ed444b;
   color: white;
   border: none;
   margin-top: 10px;
-  
+  box-shadow: 0 4px 6px rgba(41, 39, 39, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.hero-registrations button:hover,
+.hero-registrations button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 0.2);
+  transform: translateY(-0.25em);
 }
 
 .hero-content {

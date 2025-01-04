@@ -29,8 +29,8 @@ function What() {
         <div className="what-paper-section">
           <img src={imagepaper} alt="" className="what-paper-image" />
           <p className="what-paper-text">
-            Who says hackathons happen only in big cities? Join us at a venue near you, as 4000 women across Kerala prove
-            that innovation can happen anywhere. Your hometown is your tech hub.
+            Who says hackathons happen only in big cities?<br></br> Join us at a venue near you, as 4000 women across Kerala prove
+            that innovation can happen anywhere. Your hometown is your <br></br><strong>MAKER HUB</strong>.
           </p>
         </div>
        

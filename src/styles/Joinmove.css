@@ -168,7 +168,7 @@
 
 .second{
   width: 100vw;
-  height: 46.3vw;
+  height: 100vh;
   background-color: #006DFF;
   display: flex;
   color: white;
@@ -206,7 +206,7 @@
 .third{
   background-image: url('../assets/Frame2.webp');
   width: 100vw;
-  height: 39vw;
+  height: 90vh;
   display: flex;
   color: white;
   font-family: 'CabinetGrotesk', sans-serif;
@@ -223,7 +223,7 @@
 }
 .third-right img{
   width: 37vw;
-  height: 34vw;
+  height: 80vh;
   margin-top: 5vw;
    
 }
@@ -296,7 +296,7 @@
 
 .black{
   width: 100vw;
-  height: 65vw;
+  height: 140vh;
   background-color: black;
   font-family: 'CabinetGrotesk', sans-serif;
 }
@@ -326,6 +326,7 @@
 }
 .count{
   width: 100vw;
+
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -438,8 +439,8 @@ flex-direction: column;
 }
 .five{
   width: 100vw;
-  height: 46vw;
-  margin-top: 3vw;
+  height: 100vh;
+  margin-top: 6vw;
   color: black;
   font-size: 2vw;
   font-weight: 500;
