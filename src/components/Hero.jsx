@@ -24,7 +24,7 @@ function Hero() {
       >
         <div className="hero">
           <div className="hero-registrations">
-            <h1>Registrations from Jan 5th</h1>
+            <h1>Registrations from Jan 10th</h1>
             <button>APPLY NOW</button>
           </div>
         </div>
