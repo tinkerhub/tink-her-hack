@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Hero.css'; // Import the CSS file
 import image from '../assets/Frame1.webp';
@@ -7,9 +9,43 @@ import image2 from '../assets/heroimg.webp';
 import image3 from '../assets/count.webp';
 import badge from '../assets/badge.webp';
 import logo from '../assets/logo.webp';
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Hero() {
-   
+
+  const [timeLeft, setTimeLeft] = useState({
+    days: '15',
+    hours: '6',
+    minutes: '45',
+    seconds: '30',
+  });
+
+  const targetDate = new Date('2025-01-25T00:00:00').getTime(); 
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        setTimeLeft({ days: '0', hours: '0', minutes: '0', seconds: '0' });
+      } else {
+        setTimeLeft({
+          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((distance % (1000 * 60)) / 1000),
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
+
+
+  
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNav = () => {
@@ -29,11 +65,8 @@ function Hero() {
           </div>
         </div>
         <nav className="hero-nav">
-          <div className="nav-toggle" onClick={toggleNav}>
-            <div className="toggle-bar"></div>
-            <div className="toggle-bar"></div>
-            <div className="toggle-bar"></div>
-          </div>
+        <GiHamburgerMenu onClick={toggleNav} className="nav-toggle" color='#fff' fontSize={35} />
+     
           <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}>
             <Link style={{textDecoration:'none'}} to='/'>
             <li>Home</li>
@@ -64,8 +97,15 @@ function Hero() {
           </div>
 
           <div className="hero-images">
-            <img src={badge} alt="badge" className="hero-badge" />
-            <img src={image2} alt="hero" className="hero-main-image" />
+            {/* <img src={badge} alt="badge" className="hero-badge" />
+            <img src={image2} alt="hero" className="hero-main-image" /> */}
+            
+            <div>{timeLeft.days}d</div>
+            <div>{timeLeft.hours}h</div>
+            <div>{timeLeft.minutes}m</div>
+            <div>{timeLeft.seconds}s</div>
+          
+
           </div>
         </div>
       </div>

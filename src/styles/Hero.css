@@ -1,5 +1,4 @@
 
-
 .hero-container {
   width: 100vw;
   margin: 0;
@@ -179,10 +178,8 @@ Link{
 
 .hero-images {
   display: flex;
-  flex-direction: column; 
-
-  gap: 0; 
-  margin-top: 0; 
+  gap: 5vw; 
+  margin-top: 2vw; 
 
 }
 
@@ -228,7 +225,6 @@ Link{
   
   }
   .nav-toggle {
-    display: flex;
     
   
   }

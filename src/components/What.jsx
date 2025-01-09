@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 import imagepaper from '../assets/papertear.webp';
@@ -15,7 +16,7 @@ function What() {
           <p className="what-title">What is</p>
           <p className="what-subtitle">tink-her-hack?</p>
         </div>
-        <div className="what-description">
+        <div className="what-description" style={{textAlign:'justify'}}>
           <p>
             An overnight hackathon where 4000 women across Kerala stay up all night to build their first tech projects.
             No coding experience needed—if you are curious about technology, this is your starting point.<br></br> We bring the
@@ -30,7 +31,7 @@ function What() {
           <img src={imagepaper} alt="" className="what-paper-image" />
           <p className="what-paper-text">
             Who says hackathons happen only in big cities?<br></br> Join us at a venue near you, as 4000 women across Kerala prove
-            that innovation can happen anywhere. Your hometown is your <br></br><strong>MAKER HUB</strong>.
+            that innovation can happen anywhere. Your hometown is your <strong>MAKER HUB</strong>.
           </p>
         </div>
        
