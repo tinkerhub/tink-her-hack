@@ -1,5 +1,6 @@
 .main{
   display: block;
+  text-align: justify;
 }
 .first{
   background-image:url('../assets/Frame4.webp') ;
@@ -317,6 +318,7 @@
   width: 45vw;
 
 }
+
 .para p{
   color: white;
   font-size:20px;
@@ -817,6 +819,7 @@ flex-direction: column;
  }
  .black{
   height: 130vw;
+  
  }
   .black p {
     font-size: 7vw;
@@ -837,8 +840,8 @@ flex-direction: column;
   }
   .p-div p{
     font-size: 3vw;
-    text-align: center;
-    padding-left: 2vw;
+    text-align: justify;
+    padding-left: 3vw;
     padding-right: 3vw;
   }
   .count{
