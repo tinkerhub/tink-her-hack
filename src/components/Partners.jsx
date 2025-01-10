@@ -5,6 +5,7 @@ import three from '../assets/wielogo.webp';
 import four from '../assets/4.webp';
 import five from '../assets/5.webp';
 import six from '../assets/6.webp';
+import seven from '../assets/13.webp';
 import '../styles/Partners.css';
 
 function Partners() {
@@ -22,6 +23,7 @@ function Partners() {
           <img src={four} alt="Partner 4" className="partner-logo" />
           <img src={five} alt="Partner 5" className="partner-logo" />
           <img src={six} alt="Partner 6" className="partner-logo" />
+          <img src={seven} alt="Partner 7" className="partner-logo" />
         </div>
       </div>
     </div>

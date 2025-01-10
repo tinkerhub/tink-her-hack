@@ -191,7 +191,7 @@ Link{
    height: 30vh;
    background-image:url('../assets/Group\ 64.svg');
    text-align: center;
-   color: #FCD600;  
+   color: #000000;  
    font-weight: 900;
 
 }
@@ -325,7 +325,7 @@ Link{
      background-position: center; /* Centers the background image */
      background-repeat: no-repeat; 
      text-align: center;
-     color: #FCD600;  
+     color: #000000;  
      font-weight: 900;
      display: flex;
      flex-direction: column;
