@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Joinmove.css';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import potrait from '../assets/potrait.webp';
 import count from '../assets/count.webp';
@@ -21,36 +22,81 @@ import past8 from '../assets/past8.webp';
 import past9 from '../assets/past9.webp';
 import past6 from '../assets/past6.webp';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import Drawer from '@mui/material/Drawer';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+
+
 
 function Joinmove() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleDrawer = (open) => () => {
+    setIsDrawerOpen(open);
   };
+
+  const drawerList = () => (
+    <Box role="presentation" onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
+     <List>
+  {['Home', 'Actions', 'Participants'].map((text) => (
+    <ListItem button key={text}>
+      <Link 
+        to={text === 'Home' ? '/' : `/${text.toLowerCase()}`} 
+        style={{ textDecoration: 'none' }}
+      >
+        <ListItemText primary={text} />
+      </Link>
+    </ListItem>
+  ))}
+</List>
+    </Box>
+  );
+
   return (
     <div className="main">
       <div className="first">
         <nav className="hero-nav">
-          <GiHamburgerMenu
-            onClick={toggleNav}
-            className="nav-toggle"
-            color="#fff"
-            fontSize={35}
-          />
-
-          <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-            <Link style={{ textDecoration: 'none' }} to="/">
-              <li>Home</li>
-            </Link>
-            <Link style={{ textDecoration: 'none' }} to="/actions">
-              <li>Actions</li>
-            </Link>
-            <Link style={{ textDecoration: 'none' }}>
-              <li>Participants</li>
-            </Link>
-          </ul>
-        </nav>
+                <GiHamburgerMenu
+                  onClick={() => setIsDrawerOpen(true)}
+                  className="nav-toggle"
+                  color="#fff"
+                  fontSize={35}
+                />
+                <ul className="nav-links">
+                  <Link to="/" style={{ textDecoration: 'none' }}>
+                    <li>Home</li>
+                  </Link>
+                  <Link to="/actions" style={{ textDecoration: 'none' }}>
+                    <li>Actions</li>
+                  </Link>
+                  <Link to="#" style={{ textDecoration: 'none' }}>
+                    <li>Participants</li>
+                  </Link>
+                </ul>
+      
+                {isMobileView && (
+                  <div className="nav-mobile">
+                    <Drawer anchor="top" open={isDrawerOpen} onClose={toggleDrawer(false)}>
+                      {drawerList()}
+                    </Drawer>
+                  </div>
+                )}
+              </nav>
         <div className="left">
           <p className="head">
             TINK-HER-
