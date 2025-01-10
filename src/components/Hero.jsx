@@ -69,20 +69,21 @@ function Hero() {
 
   const drawerList = () => (
     <Box role="presentation" onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
-  <List>
-  {['Home', 'Actions', 'Participants'].map((text) => (
-    <ListItem button key={text}>
-      <Link 
-        to={text === 'Home' ? '/' : `/${text.toLowerCase()}`} 
-        style={{ textDecoration: 'none' }}
-      >
-        <ListItemText primary={text} />
-      </Link>
-    </ListItem>
-  ))}
-</List>
+      <List>
+        {['Home', 'Actions', 'Participants'].map((text) => (
+          <ListItem button key={text} className="list-item"> 
+            <Link
+              to={text === 'Home' ? '/' : `/${text.toLowerCase()}`}
+              style={{ textDecoration: 'none' }}
+            >
+              <ListItemText primary={text} />
+            </Link>
+          </ListItem>
+        ))}
+      </List>
     </Box>
   );
+  
 
   return (
     <div className="hero-container">
@@ -93,7 +94,10 @@ function Hero() {
         <div className="hero">
           <div className="hero-registrations">
             <h1>Registrations from Jan 10th</h1>
+            <Link style={{textDecoration:'none'}} to='https://app.tinkerhub.org/event/ZND99WHAWB '>
             <button>APPLY NOW</button>
+            </Link>
+           
           </div>
         </div>
         <nav className="hero-nav">
@@ -141,12 +145,20 @@ function Hero() {
 
           <div className="hero-images">
             
-            <div>{timeLeft.days}d</div>
-            <div>{timeLeft.hours}h</div>
-            <div>{timeLeft.minutes}m</div>
-            <div>{timeLeft.seconds}s</div>
-          
 
+        
+  <div className="countdown">
+    <p><span className="countdown-number" >{timeLeft.days}</span><br />days</p>
+  </div>
+  <div className="countdown">
+    <p><span className="countdown-number">{timeLeft.hours}</span><br />hours</p>
+  </div>
+  <div className="countdown">
+    <p><span className="countdown-number">{timeLeft.minutes}</span><br />minutes</p>
+  </div>
+  <div className="countdown">
+    <p><span className="countdown-number">{timeLeft.seconds}</span><br />seconds</p>
+  </div>
           </div>
         </div>
       </div>
