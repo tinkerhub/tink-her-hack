@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Joinmove.css';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import potrait from '../assets/potrait.webp';
 import count from '../assets/count.webp';
@@ -20,35 +21,82 @@ import past7 from '../assets/past7.webp';
 import past8 from '../assets/past8.webp';
 import past9 from '../assets/past9.webp';
 import past6 from '../assets/past6.webp';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import Drawer from '@mui/material/Drawer';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
+
+
 
 function Joinmove() {
-    const [isNavOpen, setIsNavOpen] = useState(false);
-  
-    const toggleNav = () => {
-      setIsNavOpen(!isNavOpen);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
     };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleDrawer = (open) => () => {
+    setIsDrawerOpen(open);
+  };
+
+  const drawerList = () => (
+    <Box role="presentation" onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
+     <List>
+  {['Home', 'Actions', 'Participants'].map((text) => (
+    <ListItem button key={text}>
+      <Link 
+        to={text === 'Home' ? '/' : `/${text.toLowerCase()}`} 
+        style={{ textDecoration: 'none' }}
+      >
+        <ListItemText primary={text} />
+      </Link>
+    </ListItem>
+  ))}
+</List>
+    </Box>
+  );
+
   return (
     <div className="main">
       <div className="first">
-          <nav className="hero-nav">
-                  <div className="nav-toggle" onClick={toggleNav}>
-                    <div className="toggle-bar"></div>
-                    <div className="toggle-bar"></div>
-                    <div className="toggle-bar"></div>
-                  </div>
-                  <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-                    <Link style={{textDecoration:'none'}} to='/'>
+        <nav className="hero-nav">
+                <GiHamburgerMenu
+                  onClick={() => setIsDrawerOpen(true)}
+                  className="nav-toggle"
+                  color="#fff"
+                  fontSize={35}
+                />
+                <ul className="nav-links">
+                  <Link to="/" style={{ textDecoration: 'none' }}>
                     <li>Home</li>
-                    </Link>
-                    <Link style={{textDecoration:'none'}} to='/actions'>
+                  </Link>
+                  <Link to="/actions" style={{ textDecoration: 'none' }}>
                     <li>Actions</li>
-                    </Link>
-                   <Link style={{textDecoration:'none'}}>
-                   <li>Participants</li>
-                   </Link>
-                   
-                  </ul>
-                </nav>
+                  </Link>
+                  <Link to="#" style={{ textDecoration: 'none' }}>
+                    <li>Participants</li>
+                  </Link>
+                </ul>
+      
+                {isMobileView && (
+                  <div className="nav-mobile">
+                    <Drawer anchor="top" open={isDrawerOpen} onClose={toggleDrawer(false)}>
+                      {drawerList()}
+                    </Drawer>
+                  </div>
+                )}
+              </nav>
         <div className="left">
           <p className="head">
             TINK-HER-
@@ -71,13 +119,12 @@ function Joinmove() {
             <br />
             your role in their story.
           </p>
-          <Link to='https://play.google.com/store/apps/details?id=com.hoomans.tinkerhub'>
-          <button className="whitebtn">DOWNLOAD THE APP</button>
+          <Link to="https://play.google.com/store/apps/details?id=com.hoomans.tinkerhub">
+            <button className="whitebtn">DOWNLOAD THE APP</button>
           </Link>
-          <Link to='https://www.tinkerhub.org/'>
-          <button className="yelbtn">VISIT OUR WEBSITE</button>
+          <Link to="https://www.tinkerhub.org/">
+            <button className="yelbtn">VISIT OUR WEBSITE</button>
           </Link>
-          
         </div>
         <div className="right">
           <img src={potrait} alt="Potrait" className="potrait" />
@@ -108,20 +155,11 @@ function Joinmove() {
 
           <div className="but">
             <Link to="https://bit.ly/thhvenue">
-              <button
-                className="venue-btn"
-              >
-                APPLY AS A VENUE
-              </button>
+              <button className="venue-btn">APPLY AS A VENUE</button>
             </Link>
 
             <Link to="https://tinkerhub-foundation.notion.site/HOST-TINK-HER-HACK-AT-YOUR-VENUE-30fe3eb870844bd890a04af597f8006c?pvs=4 ">
-              <button
-                style={{
-                
-                }}
-                className="venue-read"
-              >
+              <button style={{}} className="venue-read">
                 READ MORE
               </button>
             </Link>
@@ -143,31 +181,28 @@ function Joinmove() {
             <br></br> arrangements - just bring your experience and that memory{' '}
             <br></br> of your first project.
           </p>
-          <div className='mentordiv'>
-
-          <Link
-            to="https://bit.ly/thhmentors
+          <div className="mentordiv">
+            <Link
+              to="https://bit.ly/thhmentors
 "
-          >
-            <button
-              className="btn1"
-              style={{ color: 'white', fontWeight: 'bold' }}
             >
-              APPLY AS A MENTOR
-            </button>
-          </Link>
+              <button
+                className="btn1"
+                style={{ color: 'white', fontWeight: 'bold' }}
+              >
+                APPLY AS A MENTOR
+              </button>
+            </Link>
 
-          <Link to="https://tinkerhub-foundation.notion.site/BE-A-TINK-HER-HACK-MENTOR-9daf6b57fb634d3390a7a977715835a8?pvs=4 ">
-            <button
-              className="btn2"
-              style={{ color: 'black', fontWeight: 'bold' }}
-            >
-              READ MORE
-            </button>
-          </Link>
-
+            <Link to="https://tinkerhub-foundation.notion.site/BE-A-TINK-HER-HACK-MENTOR-9daf6b57fb634d3390a7a977715835a8?pvs=4 ">
+              <button
+                className="btn2"
+                style={{ color: 'black', fontWeight: 'bold' }}
+              >
+                READ MORE
+              </button>
+            </Link>
           </div>
-          
         </div>
 
         <div className="third-right">
@@ -234,7 +269,10 @@ function Joinmove() {
                 </span>
               </div>
               <div className="count-32">
-                20+ <span>OPEN MIC<br></br> SESSIONS</span>
+                20+{' '}
+                <span>
+                  OPEN MIC<br></br> SESSIONS
+                </span>
               </div>
             </div>
           </div>
@@ -244,16 +282,10 @@ function Joinmove() {
         <div className="five-head">
           <p>
             GLIMPSES FROM <br></br>{' '}
-            <span className='pic1'
-              style={{ }}
-            >
+            <span className="pic1" style={{}}>
               TINK-HER-HACK
             </span>
-            <span className='pic2'
-              style={{
-             
-              }}
-            >
+            <span className="pic2" style={{}}>
               2.0
             </span>
           </p>
@@ -311,11 +343,9 @@ function Joinmove() {
             </div>
           </div>
 
-          <Link to='https://forms.gle/JgfoD1fE8845ectU7'>
-            
-          <button className="sixbtn">I'M IN!</button>
+          <Link to="https://forms.gle/JgfoD1fE8845ectU7">
+            <button className="sixbtn">I'M IN!</button>
           </Link>
-
         </div>
         <div className="six-right">
           <img src={last} alt="" />

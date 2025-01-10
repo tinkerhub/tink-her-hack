@@ -1,20 +1,89 @@
+
 import React from 'react';
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Hero.css'; // Import the CSS file
 import image from '../assets/Frame1.webp';
-import image2 from '../assets/heroimg.webp';
+
 import image3 from '../assets/count.webp';
-import badge from '../assets/badge.webp';
+import Drawer from '@mui/material/Drawer';
+import Box from '@mui/material/Box';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemText from '@mui/material/ListItemText';
 import logo from '../assets/logo.webp';
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 function Hero() {
-   
-  const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsNavOpen(!isNavOpen);
+  const [timeLeft, setTimeLeft] = useState({
+    days: '15',
+    hours: '6',
+    minutes: '45',
+    seconds: '30',
+  });
+
+  const targetDate = new Date('2025-01-25T00:00:00').getTime();
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        setTimeLeft({ days: '0', hours: '0', minutes: '0', seconds: '0' });
+      } else {
+        setTimeLeft({
+          days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((distance % (1000 * 60)) / 1000),
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
+
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const toggleDrawer = (open) => () => {
+    setIsDrawerOpen(open);
   };
+
+  const drawerList = () => (
+    <Box role="presentation" onClick={toggleDrawer(false)} onKeyDown={toggleDrawer(false)}>
+      <List>
+        {['Home', 'Actions', 'Participants'].map((text) => (
+          <ListItem button key={text} className="list-item"> 
+            <Link
+              to={text === 'Home' ? '/' : `/${text.toLowerCase()}`}
+              style={{ textDecoration: 'none' }}
+            >
+              <ListItemText primary={text} />
+            </Link>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+  
 
   return (
     <div className="hero-container">
@@ -25,27 +94,38 @@ function Hero() {
         <div className="hero">
           <div className="hero-registrations">
             <h1>Registrations from Jan 10th</h1>
+            <Link style={{textDecoration:'none'}} to='https://app.tinkerhub.org/event/ZND99WHAWB '>
             <button>APPLY NOW</button>
+            </Link>
+           
           </div>
         </div>
         <nav className="hero-nav">
-          <div className="nav-toggle" onClick={toggleNav}>
-            <div className="toggle-bar"></div>
-            <div className="toggle-bar"></div>
-            <div className="toggle-bar"></div>
-          </div>
-          <ul className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-            <Link style={{textDecoration:'none'}} to='/'>
-            <li>Home</li>
+          <GiHamburgerMenu
+            onClick={() => setIsDrawerOpen(true)}
+            className="nav-toggle"
+            color="#fff"
+            fontSize={35}
+          />
+          <ul className="nav-links">
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              <li>Home</li>
             </Link>
-            <Link style={{textDecoration:'none'}} to='/actions'>
-            <li>Actions</li>
+            <Link to="/actions" style={{ textDecoration: 'none' }}>
+              <li>Actions</li>
             </Link>
-           <Link style={{textDecoration:'none'}}>
-           <li>Participants</li>
-           </Link>
-           
+            <Link to="#" style={{ textDecoration: 'none' }}>
+              <li>Participants</li>
+            </Link>
           </ul>
+
+          {isMobileView && (
+            <div className="nav-mobile">
+              <Drawer anchor="top" open={isDrawerOpen} onClose={toggleDrawer(false)}>
+                {drawerList()}
+              </Drawer>
+            </div>
+          )}
         </nav>
 
         <div className="hero-content">
@@ -64,8 +144,21 @@ function Hero() {
           </div>
 
           <div className="hero-images">
-            <img src={badge} alt="badge" className="hero-badge" />
-            <img src={image2} alt="hero" className="hero-main-image" />
+            
+
+        
+  <div className="countdown">
+    <p><span className="countdown-number" >{timeLeft.days}</span><br />days</p>
+  </div>
+  <div className="countdown">
+    <p><span className="countdown-number">{timeLeft.hours}</span><br />hours</p>
+  </div>
+  <div className="countdown">
+    <p><span className="countdown-number">{timeLeft.minutes}</span><br />minutes</p>
+  </div>
+  <div className="countdown">
+    <p><span className="countdown-number">{timeLeft.seconds}</span><br />seconds</p>
+  </div>
           </div>
         </div>
       </div>

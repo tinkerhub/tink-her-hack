@@ -76,6 +76,9 @@
 }
 
 @media (max-width: 480px) {
+  .testimonials-container{
+    margin-top: 50vh;
+  }
   .testimonials-left {
     font-size: 14px;
   }
@@ -87,5 +90,6 @@
   .testimonials-quote {
     font-size: 14px;
   }
+  
 
 }
