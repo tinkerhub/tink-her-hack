@@ -5,9 +5,9 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Hero.css'; // Import the CSS file
 import image from '../assets/Frame1.webp';
-import image2 from '../assets/heroimg.webp';
+
 import image3 from '../assets/count.webp';
-import badge from '../assets/badge.webp';
+
 import logo from '../assets/logo.webp';
 import { GiHamburgerMenu } from "react-icons/gi";
 
