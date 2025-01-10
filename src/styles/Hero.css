@@ -179,7 +179,7 @@ Link{
 .hero-images {
   display: flex;
   gap: 5vw; 
-  font-family: ; 
+
   font-family: 'CoveredByYourGrace', cursive;
   font-size: 3vw;
 }
@@ -230,13 +230,7 @@ Link{
     margin-top: -5px;
   
   }
-  .nav-toggle {
-    
-  
-  }
- .hero-nav{
- 
- }
+
 
  .nav-links {
   display: flex;
@@ -314,7 +308,6 @@ Link{
      height: 20vh;
     display: flex;
     gap: 5vw; 
-    font-family: ; 
     font-family: 'CoveredByYourGrace', cursive;
     font-size: 3vw;
      text-align: center;
@@ -325,8 +318,8 @@ Link{
   
   
   .countdown{
-     width: 25vw;
-     height: 20vh;
+     width: clamp(100px,25vw,200px);
+     min-height: 30vh;
      background-image:url('../assets/Group\ 64.svg');
      background-size: contain; /* Scales the image to fit the container while maintaining its aspect ratio */
      background-position: center; /* Centers the background image */
@@ -338,7 +331,7 @@ Link{
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     font-size: 5vw;
+     font-size: 1rem;
   
   }
   
