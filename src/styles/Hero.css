@@ -285,7 +285,7 @@ Link{
   }
 
   .hero-count-image {
-    margin-left: 30px;
+    
     width: 250px;
     height: 100px;
     margin-top: -70px;
@@ -301,7 +301,7 @@ Link{
   .hero-stats-text p{
     width: 50vw;
     margin-top: -130px;
-    margin-left: -90px;
+    margin-left: -130px;
   }
 
   .hero-badge {
