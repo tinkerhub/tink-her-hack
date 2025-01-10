@@ -81,13 +81,13 @@
    
   }
   .impact-background{
-    height: 1500px;
+    height: 200vh;
   }
   .impact-header {
     font-size: 30px;
   }
   .impact-stats{
-    
+   
     height: 50px;
    
   }
@@ -107,6 +107,6 @@
 
   .impact-footer {
     font-size: 14px;
-    margin-top: 260vw;
+    margin-top: 290vw;
   }
 }
