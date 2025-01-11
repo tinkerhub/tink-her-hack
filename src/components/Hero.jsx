@@ -1,11 +1,10 @@
 
 import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState , useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/Hero.css'; // Import the CSS file
+import '../styles/Hero.css'; 
 import image from '../assets/Frame1.webp';
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import image3 from '../assets/count.webp';
 import Drawer from '@mui/material/Drawer';
 import Box from '@mui/material/Box';
@@ -13,7 +12,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import logo from '../assets/logo.webp';
-import { GiHamburgerMenu } from "react-icons/gi";
+
 
 
 function Hero() {
