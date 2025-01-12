@@ -14,12 +14,11 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-  "start": "react-scripts start",
-  "build": "npm install cross-env && cross-env NODE_ENV=production react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-}
-,
+    "start": "react-scripts start",
+    "build": "npm install cross-env && cross-env NODE_ENV=production react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -37,23 +36,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-    
-  }
-  ,
-    "sideEffects": [
-      "*.css"
-    ]
-  
-=======
   },
+  "sideEffects": [
+    "*.css"
+  ],
   "devDependencies": {
     "cross-env": "^7.0.3"
-  }
-  ,
+  },
   "engines": {
-  "node": "20.x"
-}
-
->>>>>>> abc3bd1f3edca7bfa950ca664ab9e17a82cb932f
+    "node": "20.x"
+  }
 }
