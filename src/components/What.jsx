@@ -1,6 +1,5 @@
 
 import React from 'react';
-
 import imagepaper from '../assets/papertear.webp';
 import yellow from '../assets/yellowimg.webp';
 import white from '../assets/whiteimg.webp';
