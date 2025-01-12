@@ -98,8 +98,9 @@ Link{
 }
 
 .hero-registrations h1 {
-  font-family: 'CoveredByYourGrace', cursive;
-  font-size: 25px;
+    font-family: 'CabinetGrotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
 }
 
 .hero-registrations button {
@@ -109,7 +110,7 @@ Link{
   background-color: #ed444b;
   color: white;
   border: none;
-  margin-top: 10px;
+  font-family: 'CabinetGrotesk', sans-serif;
   box-shadow: 0 4px 6px rgba(41, 39, 39, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15);
   transition: box-shadow 0.3s, transform 0.3s;
 }

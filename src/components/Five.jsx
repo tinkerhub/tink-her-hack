@@ -10,7 +10,10 @@ import '../styles/Five.css';
 
 function Five() {
   return (
-    <div className="five-container" style={{ backgroundImage: `url(${image})` }}>
+    <div
+      className="five-container"
+      style={{ backgroundImage: `url(${image})` }}
+    >
       <div className="five-content">
         <div className="five-section-1">
           <h2 className="five-title-1">Breaking entry barriers</h2>
@@ -22,14 +25,44 @@ function Five() {
           </ul>
         </div>
         <div className="five-images-1">
-          <img src={imagetwo} alt="" className="image-layer image-layer-two" />
-          <img src={image1} alt="" className="image-main-1" />
-          <img src={imageone} alt="" className="image-layer image-layer-one" />
+          <img
+            src={imagetwo}
+            alt=""
+            className="image-layer image-layer-two"
+            loading="lazy"
+          />
+          <img
+            src={image1}
+            alt=""
+            className="image-main-1"
+            loading="lazy"
+          />
+          <img
+            src={imageone}
+            alt=""
+            className="image-layer image-layer-one"
+            loading="lazy"
+          />
         </div>
         <div className="five-images-2">
-          <img src={imagethree} alt="" className="image-layer image-layer-three" />
-          <img src={imagefour} alt="" className="image-layer image-layer-four" />
-          <img src={image3} alt="" className="image-main-2" />
+          <img
+            src={imagethree}
+            alt=""
+            className="image-layer image-layer-three"
+            loading="lazy"
+          />
+          <img
+            src={imagefour}
+            alt=""
+            className="image-layer image-layer-four"
+            loading="lazy"
+          />
+          <img
+            src={image3}
+            alt=""
+            className="image-main-2"
+            loading="lazy"
+          />
         </div>
         <div className="five-section-2">
           <h2 className="five-title-2">The power of numbers</h2>
