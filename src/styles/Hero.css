@@ -98,23 +98,26 @@ Link{
 }
 
 .hero-registrations h1 {
-  font-family: 'CoveredByYourGrace', cursive;
-  font-size: 25px;
+    font-family: 'CabinetGrotesk', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
 }
 
-.hero-registrations button {
+.hero-registrationsbutton button {
   width: 150px;
   height: 50px;
   border-radius: 10px;
-  background-color: #ed444b;
-  color: white;
+  background-color:#FCD600;
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
   border: none;
-  margin-top: 10px;
+  font-family: 'CabinetGrotesk', sans-serif;
   box-shadow: 0 4px 6px rgba(41, 39, 39, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15);
   transition: box-shadow 0.3s, transform 0.3s;
+  font-weight: 600;
 }
-.hero-registrations button:hover,
-.hero-registrations button:focus {
+.hero-registrationsbutton button:hover,
+.hero-registrationsbutton button:focus {
   box-shadow: 0 0.5em 0.5em -0.4em rgba(255, 255, 255, 0.2);
   transform: translateY(-0.25em);
 }
@@ -122,6 +125,7 @@ Link{
 .hero-content {
   display: flex;
   flex-direction: column;
+  margin-top: -5vh;
   align-items: center;
   position: absolute;
   z-index: 1;
@@ -163,6 +167,7 @@ Link{
 
 .hero-count-image {
   width: 100%; 
+  margin-top: -6vh;
 }
 
 .hero-stats-text {
@@ -174,31 +179,33 @@ Link{
   font-size: 30px;
   color: white; 
   text-align: center;
+  margin-top: -4vh;
 }
 
 .hero-images {
   display: flex;
   gap: 5vw; 
+
   font-family: 'CoveredByYourGrace', cursive;
-  
+  font-size: 3vw;
 }
 
 
 
 .countdown{
    width: 10vw;
-   height: 30vh;
-   background-image:url('../assets/Group\ 64.webp');
+   height: 28vh;
+   background-image:url('../assets/Group\ 64.svg');
    text-align: center;
-   color: #000000;  
+   color: #FCD600;  
+   font-weight: 900;
    background-repeat: no-repeat; 
-   font-size: 2vw;
+   margin-top: 5vh;
+
 }
 
 .countdown-number{
   color: #ed444b;
-  font-size: 5rem;
-  font-weight: 900;
 }
 
 
@@ -224,9 +231,9 @@ Link{
     font-size: 12px;
   }
 
-  .hero-registrations button {
+  .hero-registrationsbutton button {
     width: 30vw;
-    height: 25px;
+    height: 28px;
     font-size: 12px;
     margin-top: -5px;
   
@@ -249,6 +256,9 @@ Link{
     font-size: 16px;
     padding-top: 2vw;
 
+  }
+  .hero-image-container{
+    margin-top: -12vw;
   }
 
   .hero-content {
@@ -287,13 +297,13 @@ Link{
     
     width: 250px;
     height: 100px;
-    margin-top: -70px;
+    margin-top: -15vh;
   }
 
   .hero-stats-text {
    
     font-size: 17px;
-    margin-top: 65px;
+    margin-top: 50px;
     margin-left: 70px;
   }
 
@@ -321,18 +331,19 @@ Link{
   .countdown{
      width: clamp(100px,25vw,200px);
      min-height: 30vh;
-     background-image:url('../assets/Group\ 64.webp');
-     background-size: contain; 
-     background-position: center; 
+     background-image:url('../assets/Group\ 64.svg');
+     background-size: contain; /* Scales the image to fit the container while maintaining its aspect ratio */
+     background-position: center; /* Centers the background image */
      background-repeat: no-repeat; 
      text-align: center;
-     color: #000000;  
-     
+     color: #FCD600;  
+     font-weight: 900;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      font-size: 1rem;
+     margin-top: -5vw;
   
   }
   
