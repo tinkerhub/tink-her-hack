@@ -91,13 +91,13 @@ function Hero() {
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="hero">
-          <div className="hero-registrations">
+          {/* <div className="hero-registrations">
             <h1>Registrations from Jan 10th</h1>
             <Link style={{textDecoration:'none'}} to='https://app.tinkerhub.org/event/ZND99WHAWB '>
             <button>APPLY NOW</button>
             </Link>
            
-          </div>
+          </div> */}
         </div>
         <nav className="hero-nav">
           <GiHamburgerMenu
@@ -142,7 +142,13 @@ function Hero() {
             </div>
           </div>
 
-          <div className="hero-images">
+          <div className='hero-registrationsbutton'>
+          <Link style={{textDecoration:'none'}} to='https://app.tinkerhub.org/event/ZND99WHAWB '>
+            <button>REGISTER NOW</button>
+            </Link>
+          </div>
+
+       <div className="hero-images">
             
 
         
