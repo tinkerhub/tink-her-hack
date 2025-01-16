@@ -144,7 +144,7 @@ function Hero() {
 
           <div className='hero-registrationsbutton'>
           <Link style={{textDecoration:'none'}} to='https://app.tinkerhub.org/event/ZND99WHAWB '>
-            <button>REGISTER NOW</button>
+            <button>REGISTER THROUGH HUB APP</button>
             </Link>
           </div>
 
