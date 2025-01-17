@@ -104,17 +104,17 @@ Link{
 }
 
 .hero-registrationsbutton button {
-  width: 150px;
+  width: 250px;
   height: 50px;
   border-radius: 10px;
   background-color:#FCD600;
   font-size: 1vw;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   border: none;
   font-family: 'CabinetGrotesk', sans-serif;
   box-shadow: 0 4px 6px rgba(41, 39, 39, 0.2), 0 2px 4px rgba(255, 255, 255, 0.15);
   transition: box-shadow 0.3s, transform 0.3s;
-  font-weight: 600;
+  font-weight: 900;
 }
 .hero-registrationsbutton button:hover,
 .hero-registrationsbutton button:focus {
@@ -197,8 +197,8 @@ Link{
    height: 28vh;
    background-image:url('../assets/Group\ 64.svg');
    text-align: center;
-   color: #FCD600;  
-   font-weight: 900;
+   color: #000000;  
+   font-weight: 400;
    background-repeat: no-repeat; 
    margin-top: 5vh;
 
@@ -232,7 +232,7 @@ Link{
   }
 
   .hero-registrationsbutton button {
-    width: 30vw;
+    width: 50vw;
     height: 28px;
     font-size: 12px;
     margin-top: -5px;
@@ -336,7 +336,7 @@ Link{
      background-position: center; /* Centers the background image */
      background-repeat: no-repeat; 
      text-align: center;
-     color: #FCD600;  
+     color: #000000;  
      font-weight: 900;
      display: flex;
      flex-direction: column;
