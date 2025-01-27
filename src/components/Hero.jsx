@@ -24,7 +24,7 @@ function Hero() {
     seconds: '30',
   });
 
-  const targetDate = new Date('2025-01-25T00:00:00').getTime();
+  const targetDate = new Date('2025-02-01T00:00:00').getTime();
 
   useEffect(() => {
     const timer = setInterval(() => {
