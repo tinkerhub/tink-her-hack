@@ -15,10 +15,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1.5rem;
-  box-sizing: border-box;      /* include padding in width */
-  overflow-x: hidden;          /* extra safety */
+  padding: 2rem 1rem;     /* ↓ was 3rem 1.5rem */
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 /* ========== NEW: TinkHerHack 3.0 Impact Summary ========== */
 .impact-summary {
@@ -43,9 +44,11 @@
 
 .impact-summary-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
   gap: 1rem;
+  width: 100%;
 }
+
 
 .impact-summary-item {
   padding: 1rem;
@@ -74,17 +77,19 @@
   width: 100%;
   text-align: center;
   font-size: 50px;
-  margin-top: 50px;
+  margin-top: 1px;
+  margin-bottom: 1px;
   font-family: 'CoveredByYourGrace', cursive;
   color: #FCD600;
 }
+
 
 /* ========== Stats Grid (Proven Impact) ========== */
 .impact-stats {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 1px;
   gap: 20px;
   font-family: 'CabinetGrotesk', sans-serif;
   max-width: 1100px;
@@ -93,6 +98,7 @@
   margin-right: auto;
   box-sizing: border-box;
 }
+
 
 /* Individual Stat Box */
 .impact-stat {
@@ -118,6 +124,24 @@
   margin-top: 40px;
   font-family: 'CabinetGrotesk', sans-serif;
 }
+@media (max-width: 1024px) {
+  .impact-summary-grid {
+    grid-template-columns: repeat(3, 1fr); /* tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-summary-grid {
+    grid-template-columns: repeat(2, 1fr); /* mobile landscape */
+  }
+}
+
+@media (max-width: 480px) {
+  .impact-summary-grid {
+    grid-template-columns: 1fr; /* small mobile */
+  }
+}
+
 
 /* ========== Responsive Design ========== */
 @media (max-width: 768px) {
