@@ -11,7 +11,7 @@ function Impact() {
       >
         {/* 🔹 New summary section */}
         <div className="impact-summary">
-          <h2 className="impact-summary-title">TinkHerHack 3.0 Impact</h2>
+          <h2 className="impact-summary-title">Numbers From Tink Her Hack 3.0</h2>
 
           <div className="impact-summary-grid">
             <div className="impact-summary-item">
