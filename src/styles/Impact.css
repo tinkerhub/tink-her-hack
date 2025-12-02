@@ -1,24 +1,74 @@
-/* Container */
+/* ========== Container ========== */
 .impact-container {
   margin-top: -50px;
-  width: 100vw;
-  height: 140vh;
+  width: 100%;
+  overflow-x: hidden;          /* prevent horizontal cut-off */
 }
 
-/* Background */
+/* ========== Background ========== */
 .impact-background {
-  width: 100vw;
- 
+  width: 100%;
+  max-width: 100%;
   color: white;
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 140vh;
+  padding: 3rem 1.5rem;
+  box-sizing: border-box;      /* include padding in width */
+  overflow-x: hidden;          /* extra safety */
 }
 
-/* Header */
+/* ========== NEW: TinkHerHack 3.0 Impact Summary ========== */
+.impact-summary {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto 3rem auto;
+  padding: 1.5rem 1.25rem;
+  background: rgba(0, 0, 0, 0.55);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+}
+
+.impact-summary-title {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.impact-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.impact-summary-item {
+  padding: 1rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.impact-summary-item h3 {
+  margin: 0 0 0.4rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.impact-summary-item p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  color: #f5f5f5;
+}
+
+/* ========== "Proven Impact" Header ========== */
 .impact-header {
   width: 100%;
   text-align: center;
@@ -28,7 +78,7 @@
   color: #FCD600;
 }
 
-/* Stats Grid */
+/* ========== Stats Grid (Proven Impact) ========== */
 .impact-stats {
   display: flex;
   flex-wrap: wrap;
@@ -36,6 +86,11 @@
   margin-top: 70px;
   gap: 20px;
   font-family: 'CabinetGrotesk', sans-serif;
+  max-width: 1100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 /* Individual Stat Box */
@@ -50,7 +105,11 @@
   margin: 20px;
 }
 
-/* Footer */
+.impact-stat h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== Footer ========== */
 .impact-footer {
   width: 100%;
   text-align: center;
@@ -59,54 +118,99 @@
   font-family: 'CabinetGrotesk', sans-serif;
 }
 
-/* Responsive Design */
+/* ========== Responsive Design ========== */
 @media (max-width: 768px) {
+  .impact-background {
+    padding: 2rem 1rem;
+  }
+
+  .impact-summary {
+    padding: 1.25rem 1rem;
+  }
+
+  .impact-summary-title {
+    font-size: 1.4rem;
+  }
+
+  .impact-summary-grid {
+    grid-template-columns: 1fr 1fr; /* 2 per row on tablets/mobile */
+    gap: 0.75rem;
+  }
+
+  .impact-summary-item h3 {
+    font-size: 1.25rem;
+  }
+
+  .impact-summary-item p {
+    font-size: 0.8rem;
+  }
+
   .impact-header {
     font-size: 40px;
+    margin-top: 40px;
   }
 
   .impact-stat {
     font-size: 18px;
+    margin: 15px;
+    min-height: auto;
   }
 
   .impact-footer {
     font-size: 16px;
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 480px) {
-  .impact-container{
-     width: 100vw;
-     
-   
-  }
-  .impact-background{
-    height: 200vh;
-  }
-  .impact-header {
-    font-size: 30px;
-  }
-  .impact-stats{
-   
-    height: 50px;
-   
+  .impact-background {
+    padding: 1.75rem 1rem;
   }
 
-  .impact-stat{
-    margin: 0;
-    height: 50px;
+  .impact-summary-title {
+    font-size: 1.3rem;
   }
+
+  /* 🔹 On very small screens, 1 column to be safe */
+  .impact-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .impact-summary-item {
+    padding: 0.75rem;
+  }
+
+  .impact-summary-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .impact-summary-item p {
+    font-size: 0.75rem;
+  }
+
+  .impact-header {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .impact-stat {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
   .impact-stat h1 {
     font-size: 28px;
-   
   }
 
   .impact-stat p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .impact-footer {
     font-size: 14px;
-    margin-top: 290vw;
+    margin-top: 20px;
   }
 }
